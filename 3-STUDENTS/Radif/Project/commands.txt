@@ -1,0 +1,19 @@
+npm init -y (согласны с тем чтобы он проанкетировался сам)
+
+npm install webpack --save-dev (-D) - установка вебпака в разработческие зависимости
+npm install webpack-cli --save-dev (npm i webpack-cli -D)
+
+npm i bootstrap jquery popper.js
+
+Прописываем в package.json:
+"scripts": {
+    "build": "webpack --mode development"
+    ###"build": "webpack --mode production"
+  },
+В папку src добавляем index.js
+Затем:
+npm run build
+
+
+
+npm i (установка всех зависимостей с помощью файла package.json)

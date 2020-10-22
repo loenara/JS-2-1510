@@ -1,0 +1,17 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "It is project of my course professional javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack",
+    "build": "webpack --mode production ",
+    "build-dev": "webpack --mode development --watch"
+  },
+  "author": "Wowankz",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
