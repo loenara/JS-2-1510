@@ -202,7 +202,7 @@ body a, body button, input[type="submit"] {
 }
 .second-block {
     height: inherit;
-    background-image: url(../../assets/img/layer24.jpg);
+    background-image: url('../../assets/img/layer24.jpg');
     background-repeat: no-repeat;
     background-position: right -17px;
 }
