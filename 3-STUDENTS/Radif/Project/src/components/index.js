@@ -3,5 +3,5 @@ import catalog from './catalog'
 
 export default () => {
     basket.init();
-    catalog.init();
+    catalog.init(basket);
 }

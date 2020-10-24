@@ -1,0 +1,332 @@
+.bc
+  height: 148px
+  background-color: #f8f3f4
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &_h3
+    font-size: 24px
+    font-weight: 900
+    color: $color-site
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+  &_link
+    font-size: 14px
+    font-weight: 300
+    color: #636363
+    text-align: center
+    line-height: 20px
+    text-transform: uppercase
+    &:not(:last-child):after
+      content: ' / '
+    &:hover
+      font-weight: bold
+    &_active
+      color: $color-site
+      font-weight: bold
+
+.bc_link:hover
+  font-weight: bold
+
+
+.cf-content
+  display: flex
+.cf-drop
+  float: left
+  width: 243px
+  margin-right: 49px
+  &__summary
+    font-size: 14px
+    font-weight: bold
+    color: #6f6e6e
+    line-height: 14px
+    text-transform: uppercase
+    height: 37px
+    border-bottom: 1px solid #ebebeb
+    border-left: 5px solid #ef5b70
+    padding-left: 11px
+    outline: none
+    padding-top: 10px
+    box-sizing: border-box
+    justify-content: space-between
+    display: flex
+    cursor: default
+  &__ul
+    list-style-type: none
+  &__details
+    width: 243px
+    margin-bottom: 19px
+
+.test
+  text-decoration: none
+  font-size: 14px
+  color: #6f6e6e
+  line-height: 33px
+  padding-left: 17px
+  list-style-type: none
+.cf-drop__details[open] .cf-drop__summary
+  display: flex
+  top: 30px
+  z-index: 1
+  color: $color-site
+
+.cf-drop__summary::-webkit-details-marker
+  display: none
+
+.cf-drop__details[open] .cf-fa-caret-up
+  transform: rotate(180deg)
+  display: flex
+  padding-top: 13px
+
+.servis_catalog
+  height: 341px
+  width: 1600px
+.catalog
+  padding-top: 10px
+
+
+.catalog_feature_boxes
+  background-color: #222224
+  display: flex
+  padding-bottom: 114px
+  padding-top: 90px
+  justify-content: space-between
+
+.catalog_feature_box
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  height: 138px
+  width: 313px
+  text-align: center
+
+.catalog_feature_box_h1
+  font-size: 20px
+  font-weight: bold
+  color: #fbfbfb
+  letter-spacing: 0.03em
+  line-height: 20px
+  padding-top: 17px
+
+.catalog_feature_box_p
+  font-size: 14px
+  font-weight: 300
+  color: #fbfbfb
+  letter-spacing: 0.03em
+
+.cf-content
+  margin-top: 71px
+
+
+.catalog-filter
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  &__h1
+    font-size: 14px
+    font-weight: bold
+    color: #6f6e6e
+    line-height: 14px
+    text-transform: uppercase
+    margin-bottom: 25px
+
+.cf-trend
+  width: 263px
+  &__part
+    width: 177px
+    height: 39px
+    justify-content: space-between
+    display: flex
+    flex-direction: column
+  &__list
+    display: flex
+    list-style-type: none
+  &__link
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 14px
+    &:hover
+      transform: scale(1.1)
+    &:not(:last-child):after
+      content: "|"
+      font-size: 14px
+      color: #dfdfdf
+      line-height: 14px
+      margin-left: 5px
+      margin-right: 5px
+
+
+
+.cf-size
+  width: 263px
+  &__block
+    display: flex
+    flex-wrap: wrap
+    justify-content: stretch
+    width: 236px
+    height: 39px
+  &__select
+    width: 46px
+    margin-right: 13px
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 13px
+    text-transform: uppercase
+
+
+.cf-size_input:checked
+.cf-size_input:not(:checked)
+  position: absolute
+  left: -9999px
+
+.cf-size_input:checked + label ,
+.cf-size_input:not(:checked) + label
+  display: inline-block
+  position: relative
+  padding-left: 28px
+  line-height: 20px
+  cursor: pointer
+
+.cf-size_input:checked + label:before
+.cf-size_input:not(:checked) + label:before
+  content: ""
+  position: absolute
+  left: 0px
+  top: 1px
+  width: 13px
+  height: 13px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+.cf-size_input:checked + label:before,
+.cf-size_input:not(:checked) + label:before
+  border-radius: 2px
+
+.cf-size_label:hover
+  font-weight: bold
+
+.cf-price
+  width: 263px
+  &__range
+    display: flex
+    justify-content: space-between
+  &__span
+    font-size: 14px
+    color: #6f6e6e
+    line-height: 26px
+    &:before
+      content: "$"
+
+
+.cf-pagination
+  display: flex
+  justify-content: space-between
+  margin-bottom: 110px
+  &__left
+    height: 44px
+    width: 261px
+    background-color: #ffffff
+    border: 1px solid #ebebeb
+    border-radius: 3px
+    display: flex
+    justify-content: space-between
+    padding: 15px
+    box-sizing: border-box
+    align-items: center
+  &__page
+    font-size: 16px
+    font-weight: 300
+    color: #c4c4c4
+    &_active
+      color: $color-site
+  &__right
+    font-size: 16px
+    font-weight: 300
+    color: #ef5b70
+    height: 44px
+    width: 150px
+    background-color: #ffffff
+    border: 1px solid #ef5b70
+    border-radius: 3px
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    place-content: center
+  &__arrows
+    color: #aaaaaa
+
+
+.cf-pagination__arrows:hover
+  color: $color-site
+
+.cf-pagination__page:hover
+  color: $color-site
+
+
+.span_fas
+  display: none
+
+
+.price-slider 
+  position: relative
+  margin: 0 auto 20px
+  height: 35px
+  text-align: center
+
+
+.price-slider input 
+  pointer-events: none
+  position: absolute
+  left: 0
+  top: 15px
+  width: 100%
+  outline: none
+  height: 6px
+  margin: 0
+  padding: 0
+  border-radius: 3px
+  background-color: #f0f0f0
+
+
+.price-slider input::-webkit-slider-thumb 
+  pointer-events: all
+  position: relative
+  z-index: 1
+  outline: 0
+  -webkit-appearance: none
+  height: 24px
+  width: 24px
+  border-radius: 12px
+  background-color: white
+
+
+
+
+
+
+input[type=range]::-ms-fill-lower
+  background-color: $color-site
+
+input[type=range]::-moz-range-progress
+  background-color: $color-site
+
+input[type='range']
+  -webkit-appearance: none
+  background-color: #f0f0f0
+
+
+
+
+
+input[type='range']::-webkit-slider-thumb
+    width: 10px
+    -webkit-appearance: none
+    height: 10px
+    cursor: ew-resize
+    background: $color-site
+
+
+
+

@@ -1,0 +1,70 @@
+@import "variables"
+.footer-menu
+  margin-top: 109px
+  .footer-menu__left
+    max-width: 427px
+    overflow: hidden
+    color: $font-footer-menu-color
+    p
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.71
+      letter-spacing: 0.35px
+    p:nth-child(2)
+      margin-bottom: 40px
+  .footer-menu__right
+    display: flex
+    width: 100%
+    justify-content: space-around
+    align-items: flex-start
+    margin-bottom: 20px
+    .footer-menu__right-item
+      display: flex
+      flex-direction: column
+      height: 100%
+      justify-content: space-between
+      h3
+        color: $color-red
+        text-transform: uppercase
+        font-size: 18px
+        letter-spacing: 0.45px
+      a
+        font-size: 16px
+        letter-spacing: 0.4px
+        text-decoration: none
+        color: $font-footer-menu-color
+        &:hover
+          opacity: 0.7
+.footer
+  height: 79px
+  width: 100%
+  margin-top: 69px
+  background-color: $bg-footer
+  .footer_center
+    font-size: 16px
+    height: 100%
+    justify-content: space-between
+    align-items: center
+    color: #7a7a7a
+    div:first-child
+      letter-spacing: 0.4px
+      word-spacing: 2px
+    div:nth-child(2)
+      display: flex
+      justify-content: flex-end
+      .footer__social
+        width: 32px
+        height: 32px
+        line-height: 32px
+        margin-left: 8px
+        background-color: $bg-footer-social
+        text-align: center
+        text-decoration: none
+        color: $font-footer-menu-color
+        &:hover
+          background-color: #eeeeee
+          opacity: 0.5
+        &:active
+          background-color: $color-red
+          color: $bg-footer-social
+          opacity: 1

@@ -1,0 +1,103 @@
+@use "shared";
+
+main {
+	margin: {
+		top: 60px;
+		bottom: 93px;
+	}
+}
+
+section {
+	padding: 30px 0;
+	border-bottom: #e8e8e8 1px solid;
+}
+
+section h2 {
+	color: shared.$textColor;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.shippingAddress {
+	padding: 10px 35px 50px 35px;
+	display: flex;
+
+	form {
+		width: 50%;
+	}
+
+	h3 {
+		margin-top: 30px;
+	}
+
+	h3, label {
+		color: shared.$textColor;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	p, li {
+		margin-top: 13px;
+
+		color: #b3b2b2;
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+	p {
+		margin-bottom: 30px;
+	}
+
+	li {
+		list-style-type: none;
+		padding-left: 12px;
+		background: url("../../assets/img/marker.png") no-repeat center left;
+	}
+
+	ul {
+		margin-bottom: 30px;
+	}
+
+	.required {
+		color: #ff0d0d;
+	}
+
+	&__radio {
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	input[type="radio"] {
+		margin-right: 15px;
+	}
+
+	input[type="email"], input[type="password"] {
+		width: 290px;
+		height: 45px;
+		margin: 15px 0 20px 0;
+		padding: 0 15px;
+		border: 1px solid #eaeaea;
+		display: block;
+	}
+
+	input[type="submit"] {
+		width: 180px;
+		height: 50px;
+		border: 1px solid #eaeaea;
+		background-color: #ffffff;
+
+		color: #4a4a4a;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__forgotPass {
+		margin-left: 32px;
+		color: shared.$textColor;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}

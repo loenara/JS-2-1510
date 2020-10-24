@@ -1,0 +1,114 @@
+@import "variables"
+
+.header
+  height: 100px
+  display: flex
+  justify-content: space-between
+  align-content: center
+
+  &__right
+    display: flex
+    align-items: center
+
+  &__left
+    display: flex
+    align-items: center
+
+    span
+      color: $mainColour
+      font-weight: $textBold
+
+    a
+      text-decoration: none
+      font-weight: $textThin
+      color: $secondColour
+      letter-spacing: 0.68px
+
+  &__logo
+    text-transform: uppercase
+    font-size: 27px
+    display: flex
+    align-items: center
+    line-height: 50px
+    margin-right: 37px
+
+    img
+      margin-right: 13px
+
+  &__browse
+    padding: 15px
+    background-color: #f8f8f8
+    font-weight: $textThin
+
+  &__search
+    height: 38px
+    display: flex
+    align-items: center
+    border-radius: 3px 3px 3px 3px
+    border: 1px solid #e6e6e6
+    overflow: hidden
+
+    input
+      border: none
+      border-right: 1px solid #e6e6e6
+      border-left: 1px solid #e6e6e6
+      outline: none
+      overflow: hidden
+      height: inherit
+      padding: 14px 16px
+
+    button
+      border: none
+      outline: none
+      padding-left: 11px
+      padding-right: 12px
+      background-color: #fff
+
+  &__cart
+    margin-right: 26px
+    transition-duration: 1s
+
+    &:hover
+      transform: scale(1.3, 1.3)
+
+  &__account-bar
+    color: #ffffff
+    font-size: 15px
+    line-height: 38px
+    background-color: #f16d7f
+    padding: 0 12px 0 19px
+    text-decoration: none
+
+  &__line
+    border-bottom: 1px solid #ececec
+
+.main__menu
+  height: 51px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 14px
+  font-weight: $textBold
+
+  a
+    text-transform: uppercase
+    text-decoration: none
+    color: $secondColour
+    cursor: pointer
+    display: block
+    height: 30px
+    position: relative
+
+    &:not(:last-child)
+      margin-right: 48px
+
+  a:hover::after
+    content: ''
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 4px
+    left: 0
+    background: $mainColour
+
+    

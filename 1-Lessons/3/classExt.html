@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Human {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            sayHi() {
+                console.log(this.name + ' greets You!');
+            }
+
+            goWork() {
+                console.log(this.name + ' goes to work.');
+            }
+        }
+
+        class Male extends Human {}
+
+        class Female extends Human {
+            constructor(name, age) {
+                super(name, undefined);
+                this._VictoriaSSecret = age;
+            }
+
+            goPilates() {
+                console.log(this.name + ' goes to pilates.');
+            }
+        }
+
+        let petya = new Male('Pyotr', 24);
+        let olya = new Female('Olga', 23);
+    </script>
+</body>
+</html>

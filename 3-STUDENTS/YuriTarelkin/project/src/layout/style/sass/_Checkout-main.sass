@@ -1,0 +1,185 @@
+@import "variables"
+
+.checkout__main
+  margin-bottom: 93px
+  display: flex
+  flex-direction: column
+
+  &-section
+    border-bottom: 1px solid #e8e8e8
+
+    input
+      display: none
+
+    label
+      width: 100%
+      color: $secondColour
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+      text-align: left
+      text-decoration: none
+      height: 72px
+      line-height: 72px
+
+      span
+        margin-left: 10px
+
+    &-contente
+      display: none
+      height: 560px
+      border-bottom: 1px solid #e8e8e8
+
+      &-left
+        display: flex
+        flex-direction: column
+        margin-left: 35px
+        width: 550px
+
+      &-caption
+        margin-top: 39px
+        color: $secondColour
+        font-size: 13px
+        font-weight: $textBold
+        text-transform: uppercase
+
+      &-description
+        margin-top: 15px
+        color: #b3b2b2
+        font-size: 13px
+        font-weight: $textMain
+        line-height: 20px
+        margin-bottom: 8px
+
+      &-right
+        display: flex
+        flex-direction: column
+        width: 550px
+        justify-content: start
+
+        &-form
+          margin-top: 23px
+          display: flex
+          flex-direction: column
+
+
+          &-text
+            color: $secondColour
+            font-size: 12px
+            font-weight: $textBold
+            line-height: 20px
+            text-transform: uppercase
+
+            sub
+              color: #ff0d0d
+              font-size: 17px
+              font-weight: $textMain
+              line-height: 20px
+
+          input
+            margin-top: 16px
+            width: 390px
+            height: 45px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+
+          &-required
+            margin-top: 22px
+            color: #ff0d0d
+            font-size: 13px
+            font-weight: $textMain
+            line-height: 20px
+
+        &-button
+          margin-top: 32px
+
+          a
+            color: $secondColour
+            font-size: 14px
+            font-weight: $textBold
+            line-height: 20px
+            margin-left: 32px
+            text-decoration: none
+
+          button
+            width: 180px
+            height: 50px
+            border: 1px solid #eaeaea
+            background-color: #ffffff
+            color: #4a4a4a
+            font-size: 14px
+            font-weight: $textBold
+            text-transform: uppercase
+
+    input:checked
+      ~ .checkout__main-section-contente
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+
+.checkout-guest
+  margin: 0
+  padding: 0
+  margin-top: 23px
+  height: 30px
+  line-height: 30px
+  vertical-align: middle
+
+.checkout-register
+  margin: 0
+  padding: 0
+  height: 30px
+  line-height: 30px
+  vertical-align: middle
+
+  &-contente
+    margin-left: 24px
+
+    &-caption
+        margin-top: 33px
+        color: $secondColour
+        font-size: 13px
+        font-weight: $textBold
+        text-transform: uppercase
+
+    &-description
+      margin-top: 15px
+      color: #b3b2b2
+      font-size: 13px
+      font-weight: $textMain
+      line-height: 20px
+      margin-bottom: 33px
+
+      &-advantage
+        color: #b3b2b2
+        font-size: 13px
+        font-weight: $textMain
+        line-height: 20px
+
+    button
+      margin-top: 38px
+      width: 180px
+      height: 50px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-size: 14px
+      font-weight: $textBold
+      text-transform: uppercase
+
+
+.checkout__main-section a:active ~ div
+  display: flex
+  justify-content: space-between
+  flex-direction: row
+
+.checkout__label
+  color: $secondColour
+  font-size: 12px
+  font-weight: $textBold
+  text-transform: uppercase
+  vertical-align: middle
+
+
+
+

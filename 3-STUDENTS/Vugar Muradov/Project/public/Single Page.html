@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../src/assets/img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Single Page</title>
+    <link rel="stylesheet" href="../src/layout/styles/style.css">
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header container"> <a href="Index.html" class="logoBrand">Bran<span>D</span></a>
+        <form action="#" class="search">
+            <label class="searchBrowse">Browse&nbsp;&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></label>
+            <datalist>
+                <option value="man"></option>
+                <option value="women"></option>
+                <option value="kids"></option>
+            </datalist>
+            <input name="search" type="text" placeholder="Search for Item...">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <div class="headerCart">
+            <div class="shoppingCart">
+                <a href="Shopping%20Cart.html"><img src="../src/assets/img/cart.png" alt="headerCart"></a>
+                <div class="shoppingCartOpen">
+                    <div class="shoppingCartOpenWrapper">
+                        <div class="cartProduct" id="basket"> </div>
+                        <div class="total500">
+                            <div>TOTAL</div>
+                            <div>$500.00</div>
+                        </div> <a class="headerCheckoutButton" href="Checkout.html" target="_blank">CHECKOUT</a> <a href="Shopping%20Cart.html" class="headerGoToCartButton" target="_blank">GO TO CART</a> </div>
+                </div>
+            </div>
+        </div>
+        <button class="accountButton">My Account&nbsp;&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></button>
+    </header>
+    <div class="headerLine"></div>
+    <nav class="topNav"> <a href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a href="#">Accoseriese</a> <a href="#">Featured</a> <a href="#">Hot Deals</a> </nav>
+    <main>
+        <div class="breadcrumbBlock">
+            <div class="container arrival">
+                <div class="arrivalText">New Arrivals</div>
+                <div class="breadcrumbs">Home / Men /<span class="activeCrump"> New Arrivals</span></div>
+            </div>
+        </div>
+        <div class="singlePage">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img class="d-block w-100" src="../src/assets/img/slider.jpg" alt="Первый слайд"> </div>
+                    <div class="carousel-item"> <img class="d-block w-100" src="../src/assets/img/slider.jpg" alt="Второй слайд"> </div>
+                    <div class="carousel-item"> <img class="d-block w-100" src="../src/assets/img/slider.jpg" alt="Третий слайд"> </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <div class="carousel-control-prev-div"><span class="carousel-control-prev-icon" aria-hidden="true"></span></div> <span class="sr-only">Previous</span> </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <div class="carousel-control-next-div"><span class="carousel-control-next-icon" aria-hidden="true"></span></div> <span class="sr-only">Next</span> </a>
+            </div>
+            <div class="singlePageWrap container">
+                <div class="col-6">
+                    <div>WOMEN COLLECTION</div>
+                    <div><img src="../src/assets/img/recktangle.jpg" alt="recktangle"></div>
+                    <div>Moschino Cheap And Chic</div>
+                    <div>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+                    <div> <span class="materialDesigner">MATERIAL:&nbsp;</span><span class="cottonBinburhan">COTTON</span> <span class="materialDesigner">DESIGNER:&nbsp;</span><span class="cottonBinburhan">BINBURHAN</span> </div>
+                    <div>$561</div>
+                    <div></div>
+                    <div> <span>CHOOSE COLOR</span> <span>CHOOSE SIZE</span> <span>QUANTITY</span> </div>
+                    <form>
+                        <input type="color" placeholder="Red" list="colorList" value="#ef5b70" class="inputColor">
+                        <input placeholder="XXL" list="list">
+                        <input placeholder="2"> </form>
+                    <button class="cartMyRedButton"> <img src="../src/assets/img/cartMini.png" alt="Cart">&nbsp;<span>Add to Cart</span></button>
+                </div>
+                <div class="youMayLikeAlso container">
+                    <div>you may like also</div>
+                    <div class="mayLikeBlocks">
+                        <article class="product">
+                            <a href="#"><img src="../src/assets/img/YMAL1.jpg" class="imageMargin">
+                                <br><span class="youMayLikeAlsoSpan">BLAZE LEGGINGS</span>
+                                <br><span class="price">$52.00</span></a>
+                        </article>
+                        <article class="product">
+                            <a href="#"><img src="../src/assets/img/YMAL2.jpg">
+                                <br><span class="youMayLikeAlsoSpan">ALEXA SWEATER</span>
+                                <br><span class="price">$52.00</span></a>
+                        </article>
+                        <article class="product">
+                            <a href="#"><img src="../src/assets/img/YMAL3.jpg">
+                                <br><span class="youMayLikeAlsoSpan">AGNES TOP</span>
+                                <br><span class="price">$52.00</span></a>
+                        </article>
+                        <article class="product">
+                            <a href="#"><img src="../src/assets/img/YMAL4.jpg">
+                                <br><span class="youMayLikeAlsoSpan">SYLVA SWEATER</span>
+                                <br><span class="price">$52.00</span></a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="clearFixSinglePage"></div>
+    <div class="reviewSubscribe">
+        <div class="container reviewSubscribeFit">
+            <div class="review">
+                <div class="customerPhoto"></div>
+                <div class="customerReviewAndLine">
+                    <div class="customerReview"><i>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium&raquo;</i></div>
+                    <div class="customerReviewName"><span class="reviewName">Bin Burhan</span>
+                        <br> <span class="reviewCity">Dhaka, Bd</span></div>
+                    <div class="customerLine"><img src="../src/assets/img/3layers.png" alt="layers"></div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="subscribe">
+                <div class="subEmailText1">Subscribe</div>
+                <div class="subEmailText2">FOR OUR NEWLETTER AND PROMOTION</div>
+                <div>
+                    <input name="search" type="text" placeholder="Enter Your Email" class="subEmailButton">
+                    <button class="myRedButton">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container description">
+            <div class="descriptionFirst">
+                <div class="logoBrand">Bran<span>D</span></div>
+                <div class="descriptionText">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    <br>
+                    <br> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</div>
+            </div>
+            <nav class="naviBar">
+                <div class="naviBarList"><span class="naviBarLetters">COMPANY</span>
+                    <br> <a href="#">Home</a>
+                    <br><a href="#">Shop</a>
+                    <br><a href="#">About</a>
+                    <br><a href="#">How It Works</a>
+                    <br><a href="#">Contanct</a></div>
+                <div class="naviBarList"><span class="naviBarLetters">INFORMATION</span>
+                    <br><a href="#">Tearms &amp; Condition</a>
+                    <br> <a href="#">Privacy Policy</a>
+                    <br><a href="#">How to Buy</a>
+                    <br> <a href="#">How to Sell</a>
+                    <br> <a href="#">Promotion</a> </div>
+                <div class="naviBarList"><span class="naviBarLetters">SHOP CATEGORY</span>
+                    <br><a href="#">Man</a>
+                    <br><a href="#">Women</a>
+                    <br> <a href="#">Child</a>
+                    <br><a href="#">Apparel</a>
+                    <br><a href="#">Brows All</a></div>
+            </nav>
+        </div>
+    </footer>
+    <div class="footerRights">
+        <div class="container rights">
+            <div class="rightText">© 2017 Brand All Rights Reserved.</div>
+            <div class="social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

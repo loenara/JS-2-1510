@@ -1,0 +1,28 @@
+@mixin buttonChoose($_width, $_height)
+  display: flex
+  flex-wrap: nowrap
+  &>input
+    margin: 0
+    height: $_height
+    width: $_width
+    border: 1px solid #eaeaea
+    outline: none
+    padding-left: 14px
+    padding-right: 25px
+    font-size: 13px
+    background-color: #ffffff
+    box-sizing: border-box
+  &>button
+    width: 23px
+    height: calc(#{$_height} - 2px)
+    margin: auto -25px
+    border: none
+    outline: none
+    background-color: #ffffff
+    color: #bcbcbc
+    &:hover
+      cursor: pointer
+      color: $color-red
+  &>input::placeholder
+    font-size: 13px
+    color: #bcbcbc

@@ -1,18 +1,12 @@
-// const NAMES = ['Mango People T-Shirt', 'Banana People T-Shirt', 'Strawberry People T-Shirt', 'Orange People T-Shirt', 'Pumpkin People T-Shirt', 'Pineapple People T-Shirt', 'Cucumber People T-Shirt', 'Tomato People T-Shirt'];
-// const PRICES = [52, 53, 55, 67, 69, 94, 23, 45];
-
-//
 export default {
     items: [],
     basket: null,
     container: null,
     imgFTPurl: 'https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop',
     url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/catalog.json',
-    init() {
-        console.log('CATALOG');
+    init(basket) {
         this.container = document.querySelector('#catalog');
         this.basket = basket;
-        // this.items = getItems();
         this._get(this.url)
         .then(items => {
             this.items = items;
@@ -71,25 +65,3 @@ export default {
         this.container.innerHTML = htmlStr;
     }
 }
-
-
-{/* <div class="hot-offer__stars">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div> class half-star
-</div> */}
-
-//
-
-// function createNewItem(name, price) {
-//     return {
-//         productName: name,
-//         productPrice: price
-//     }
-// }
-
-// function getItems() {
-//     return NAMES.map((name, index) => createNewItem(NAMES[index], PRICES [index]));
-// }

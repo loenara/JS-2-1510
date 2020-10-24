@@ -1,0 +1,259 @@
+@import "variables"
+
+.shoppingCart__cart
+  height: 620px
+
+  &-contente
+    display: flex
+    flex-direction: column
+
+  &-caption
+    margin-top: 90px
+    color: $secondColour
+    font-size: 13px
+    font-weight: $textBold
+    text-transform: uppercase
+    letter-spacing: -0.2px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 20px
+
+  &-left
+    width: 510px
+    display: flex
+    flex-direction: row
+
+  &-right
+    width: 630px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    &-column
+      width: 20%
+      text-align: center
+      vertical-align: center
+
+      input
+        margin-top: -5px
+        width: 54px
+        height: 30px
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        text-align: center
+
+      input::placeholder
+        color: #656565
+        font-size: 13px
+        font-weight: $textBold
+
+
+  &-item
+    height: 160px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    vertical-align: center
+    border-top: 1px solid #eaeaea
+    border-bottom: 1px solid #eaeaea
+    border-collapse: collapse
+
+    &-img
+      width: 100px
+      height: 115px
+
+    &-description
+      margin-left: 21px
+
+      h3
+        color: $secondColour
+        font-size: 13px
+        font-weight: $textBold
+        text-transform: uppercase
+        margin-bottom: 35px
+
+      div
+        margin-top: 3px
+        color: #575757
+        font-weight: $textBold
+        font-size: 13px
+
+        span
+          color: #6f6e6e
+          font-weight: $textThin
+          margin-left: 5px
+
+  &-buttons
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    margin-top: 41px
+
+    &-button button
+      width: 238px
+      height: 53px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-size: 14px
+      font-weight: $textBold
+      text-transform: uppercase
+
+      &:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+.shoppingCart__buyBlock
+  display: flex
+  flex-direction: row
+
+  &-delivery
+    width: 390px
+    display: flex
+    flex-direction: column
+    margin-top: 63px
+    justify-content: space-between
+    height: 270px
+    margin-bottom: 79px
+
+    &-caption
+      color: $secondColour
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+
+    input
+      width: 355px
+      height: 45px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      padding-left: 18px
+
+    input::placeholder
+      width: 45px
+      height: 13px
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: $textThin
+
+    button
+      width: 100px
+      height: 35px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: $textBold
+      text-transform: uppercase
+
+      &:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+  &-coupon
+    width: 390px
+    display: flex
+    flex-direction: column
+    margin-top: 63px
+    justify-content: space-between
+    height: 190px
+
+    &-caption
+      color: $secondColour
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+
+    input
+      width: 355px
+      height: 45px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      padding-left: 18px
+
+    input::placeholder
+      width: 45px
+      height: 13px
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: $textThin
+
+    button
+      width: 118px
+      height: 35px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: $textBold
+      text-transform: uppercase
+
+      &:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+  &-buy
+    margin-top: 63px
+    width: 360px
+    display: flex
+    flex-direction: column
+    height: 214px
+    background-color: #f5f3f3
+    align-items: center
+
+    &-row1
+      margin-top: 40px
+      width: 273px
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: $textMain
+      text-transform: uppercase
+      text-align: right
+
+      span
+        margin-left: 20px
+
+    &-row2
+      margin-top: 14px
+      width: 273px
+      color: $secondColour
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+      text-align: right
+
+      span
+        color: $mainColour
+        margin-left: 20px
+
+    &-line
+      border-bottom: 1px solid #e2e2e2
+      margin-top: 22px
+      width: 275px
+
+    button
+      margin-top: 17px
+      border: none
+      outline: none
+      width: 273px
+      height: 50px
+      background-color: #f16d7f
+      color: #ffffff
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+
+      &:hover
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+  #country
+    width: 375px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding-left: 18px
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: $textThin

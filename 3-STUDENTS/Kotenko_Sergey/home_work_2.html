@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 2em;
+            color: purple;
+        } 
+        details{
+            margin-bottom: 20px;         
+        } 
+
+        summary {
+            font-size: 1.2em;
+        }     
+    </style>
+</head>
+<body>
+
+<!-- 1 -->
+    <h1>Домашка:</h1>
+
+    <details>
+    <summary>Задание намбер уан(1):</summary>
+        <h1>Почему код даёт именно такие результаты?</h1>
+        <p> var a = 1, b = 1, c, d;    </p>  
+        <p> c = ++a; alert(c);           // 2 // - Так как это Префиксная запись. ++ выполняют роль прибавление на 1 так как стоит до a  </p>
+        <p> d = b++; alert(d);           // 1 //- Так как это Постфиксная запись. ++ не выполняют роль прибавление на 1 так как стоит после a  </p>
+        <p> c = (2+ ++a); alert(c);      // 5 // - Так как ++ идёт до a   &&   a - перезаписалась в прошлом на ++ и получается = 5 </p>
+        <p> d = (2+ b++); alert(d);      // 4 // - Так как ++ идёт после b && b - перезаписалась в прошлом на ++ и получается = 4 </p>
+        <p>alert(a);                    // 3 // - 2 раза перезаписывалась на ++ </p> 
+        <p> alert(b);                    // 3 // - 2 раза перезаписывалась на ++ </p>   
+    </details>
+
+<!-- 7 -->    
+    <details>
+        <summary>Задание намбер севэн(7):</summary>
+        null обозначает ничего, а 0 это значени
+    </details>       
+
+    <h2>Фанкшан:</h2>
+
+    <button onclick="task_2()">Задание 2</button>  
+    <button onclick="task_3_1()">Задание 3_1 </button>
+    <button onclick="task_3_2()">Задание 3_2</button>
+    <button onclick="task_4()">Задание 4</button>
+    <button onclick="task_5()">Задание 5</button>
+    <button onclick="task_6()">Задание 6</button>
+    <button onclick="task_8_1()">Задание 8 (С остановкой)</button>
+    <button onclick="task_8_2()">Задание 8 (Без остановки)</button>
+
+</body>
+
+<!-- 2 -->
+    <!-- Ответ:x=5 -->
+
+    <script>
+        function task_2 () {        
+        var a = 2;
+        var x = 1 + (a *= 2);  //  a*= это a = a*2
+        console.log(x)
+    }
+    </script>
+
+<!-- 3 -->
+    <script>
+        function task_3_1 () {
+        let a = +prompt('Введите первое число')
+        let b = +prompt('Введите второе число')
+        if (a>=0 && b>=0){
+        console.log(`Вычит ${a}-${b} равно: ${a-b}`);
+        } else if (a<0 && b<0){
+        console.log(`Множить ${a}*${b} равно: ${a*b}`)
+        } else{
+        console.log(`Плюсование ${a}+${b} равно: ${a+b}`)
+        } 
+    } 
+    </script>
+
+        <!-- Варик 2: Тройничок (?) --> 
+    <script>
+        function task_3_2 () {
+        let a = +prompt('Введите первое число')
+        let b = +prompt('Введите второе число')
+        if  (a>=0 && b>=0) { 
+        console.log(`Вычит ${a}-${b} равно: ${a-b}`); 
+        }    
+        else { 
+        (a<0 && b<0) ?  console.log(`Множить ${a}*${b} равно: ${a*b}`) : console.log(`Плюсование ${a}+${b} равно: ${a+b}`)
+        }
+        }     
+    </script>
+
+<!-- 4 -->
+<script>
+    function task_4 (){
+    a = +prompt ('Введите число от 0 до 15');
+        switch (a) {
+        case 0:
+            console.log ( 'Вы выбрали 0. Следующие: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 1:
+            console.log ( 'Вы выбрали 1. Следующие: 2,3,4,5,6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 2:
+            console.log ( 'Вы выбрали 2. Следующие: 3,4,5,6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 3:
+            console.log ( 'Вы выбрали 3. Следующие: 4,5,6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 4:
+            console.log ( 'Вы выбрали 4. Следующие: 5,6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 5:
+            console.log ( 'Вы выбрали 5. Следующие: 6,7,8,9,10,11,12,13,14,15');
+            break;
+        case 6:
+            console.log ( 'Вы выбрали 6. Следующие: 7,8,9,10,11,12,13,14,15');
+            break;
+        case 7:
+            console.log ( 'Вы выбрали 7. Следующие: 8,9,10,11,12,13,14,15');
+            break;
+        case 8:
+            console.log ( 'Вы выбрали 8. Следующие: 9,10,11,12,13,14,15');
+            break;
+        case 9:
+            console.log ( 'Вы выбрали 9. Следующие: 10,11,12,13,14,15');
+            break;
+        case 10:
+            console.log ( 'Вы выбрали 10. Следующие: 11,12,13,14,15');
+            break;
+        case 11:
+            console.log ( 'Вы выбрали 11. Следующие: 12,13,14,15');
+            break;
+        case 12:
+            console.log ( 'Вы выбрали 12. Следующие: 13,14,15');
+            break;
+        case 13:
+            console.log ( 'Вы выбрали 13. Следующие: 14,15');
+            break;
+        case 14:
+            console.log ( 'Вы выбрали 14. Следующий: 15');
+            break;
+        case 15:
+            console.log ( 'Вы выбрали 15. Поздравляю');
+            break;	
+    }
+    }	
+</script>
+
+<!-- 5 -->
+
+    <script>
+        function task_5 () {
+        let arg1 = +prompt('Введите первое число')
+        let arg2 = +prompt('Введите первое число')
+        console.log(sum(arg1,arg2));
+        console.log(sum2(arg1,arg2));
+        console.log(sum3(arg1,arg2));
+        console.log(sum4(arg1,arg2));
+        }
+
+        function sum(arg1,arg2){        
+        return `Произведение чисел ${arg1} и ${arg2} равно: ${arg1+arg2};`       
+        }
+
+        function sum2(arg1,arg2){
+        return `Умножение чисел ${arg1} и ${arg2} равно: ${arg1*arg2};`
+        }
+        function sum3(arg1,arg2){
+        return `Разность чисел ${arg1} и ${arg2} равно: ${arg1-arg2};`
+        }
+        function sum4(arg1,arg2){
+        return `Деление чисел ${arg1} и ${arg2} равно: ${arg1/arg2};`
+        }
+
+
+    </script>
+
+<!-- 6 -->
+
+<script>   
+    function task_6 () {
+        let arg1 = +prompt('Введите первое число');
+        let arg2 = +prompt('Введите второе число');
+        let operation = prompt('Введите арифметическую операцию: plus, minus, multiply, division ')
+        console.log(mathOperation(arg1, arg2, operation)) 
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        
+        switch (operation) {
+            case "plus":
+            return sum(arg1,arg2);        
+            break;
+            case "multiply":
+            return sum2(arg1,arg2);
+            break;
+            case "minus":
+            return sum3(arg1,arg2);
+            break;
+            case "division":
+            return sum4(arg1,arg2);
+            break;   
+        }
+    }     
+</script>
+
+<!-- 8 -->
+        <!-- Варик остановки рекурсии  -->
+    <script> 
+        function task_8_1 () {
+            if(confirm("Запускаем?")){
+            let val = +prompt('Введите число');
+            let pow = +prompt('Введите степень числа');
+            task_8_save(val,pow)
+            }
+            else {
+                alert("Ну и ладно")
+            }
+        }     
+        function task_8_save (val,pow){
+        let b = Math.pow(val,pow)
+        console.log(b);
+            if (b<1000000){
+            task_8_save(b,pow);
+            } else {
+            console.log('конец')
+            }
+        }        
+    </script>
+
+    <!-- Без остановки  -->
+    <script>
+        function task_8_2 () {
+            if(confirm("Вы точно хотите запустить бесконечный цикл?")){
+            let val = +prompt('Введите число');
+            let pow = +prompt('Введите степень числа');
+            task_8_not_save(val,pow)
+            }
+            else {
+                alert("Ну и ладно")
+            }       
+        }
+    
+        function task_8_not_save (val,pow){
+        let b = Math.pow(val,pow)
+        console.log(b);        
+        task_8_not_save(b,pow);        
+        } 
+    </script>
+</html>

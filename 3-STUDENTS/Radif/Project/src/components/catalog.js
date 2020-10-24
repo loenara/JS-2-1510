@@ -1,7 +1,4 @@
-// const NAMES = ['Mango People T-Shirt', 'Banana People T-Shirt', 'Strawberry People T-Shirt', 'Orange People T-Shirt', 'Pumpkin People T-Shirt', 'Pineapple People T-Shirt', 'Cucumber People T-Shirt', 'Tomato People T-Shirt'];
-// const PRICES = [52, 53, 55, 67, 69, 94, 23, 45];
-
-//
+// для webpack const catalog меняем на export default
 // const catalog = {
 export default {
     items: [],
@@ -9,7 +6,7 @@ export default {
     container: null,
     imgFTPurl: 'https://raw.githubusercontent.com/kellolo/static/master/img/JS1_shop',
     url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/catalog.json',
-    init() {
+    init(basket) {
         this.container = document.querySelector('#catalog');
         this.basket = basket;
         // this.items = getItems();
@@ -72,26 +69,5 @@ export default {
     }
 }
 
-
-{/* <div class="hot-offer__stars">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div> class half-star
-</div> */}
-
 // убираем для webpack catalog.init();
 // catalog.init();
-//
-
-// function createNewItem(name, price) {
-//     return {
-//         productName: name,
-//         productPrice: price
-//     }
-// }
-
-// function getItems() {
-//     return NAMES.map((name, index) => createNewItem(NAMES[index], PRICES [index]));
-// }

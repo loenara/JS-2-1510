@@ -1,0 +1,191 @@
+.sc-block
+  margin-top: 90px
+.sc-content
+  display: flex
+  align-items: center
+  margin-top: 22px
+  border-bottom: 1px solid #eaeaea
+  padding-bottom: 22px
+  &__head
+    display: flex
+    font-size: 13px
+    font-weight: bold
+    color: #222222
+    letter-spacing: -0.01em
+    line-height: 20px
+    text-transform: uppercase
+  &__product
+    display: flex
+    width: 511px
+    &__descr
+      padding-top: 12px
+      margin-left: 21px
+    &_item
+      margin-left: 21px
+    &_name
+      font-size: 13px
+      font-weight: bold
+      color: #222222
+      letter-spacing: -0.01em
+      text-transform: uppercase
+    &_descr
+      margin-bottom: 22px
+      margin-top: 38px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      height: 31px
+    &_p
+      font-size: 13px
+      color: #575757
+      line-height: 13px
+    &_span
+      font-size: 13px
+      font-weight: 300
+      color: #6f6e6e
+      line-height: 13px
+  &__cost
+    width: 174px
+    &_span
+      padding-left: 21px
+      &::before
+        content: "$"
+  &__qua
+    width: 144px
+    &_span
+      padding: 8px 23px
+      box-sizing: border-box
+      border: 1px solid #eaeaea
+      margin-left: 6px
+      font-size: 13px
+      color: #656565
+
+  &__shipping
+    width: 144px
+    &_span
+      padding-left: 12px
+  &__subtotal
+    width: 118px
+    &_span
+      padding-left: 17px
+      &::before
+        content: "$"
+  &__icon
+    width: 52px
+    padding-left: 16px
+  &__font_span
+    font-size: 13px
+    color: #656565
+    line-height: 20px
+
+.sc-buttons
+  display: flex
+  justify-content: space-between
+  margin-top: 44px
+  &__style
+    font-size: 14px
+    font-weight: bold
+    color: #4a4a4a
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    padding: 19px 39px
+    &:hover
+      color: $color-site
+      border-color: $color-site
+
+.sc-bottom
+  display: flex
+  justify-content: space-between
+  margin-top: 63px
+  margin-bottom: 79px
+  &__block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 268px
+    &_coupon
+      height: 184px
+    &_proceed
+      height: 214px
+      background-color: #f5f3f3
+      padding-top: 40px
+      box-sizing: border-box
+      width: 360px
+      align-items: center
+  &__h1
+    font-size: 16px
+    font-weight: bold
+    color: #222222
+    text-transform: uppercase
+    margin-bottom: 22px
+  &__input
+    font-size: 13px
+    font-weight: 300
+    color: #b1b1b1
+    height: 45px
+    width: 355px
+    border: 1px solid #eaeaea
+    padding-left: 18px
+    padding-right: 18px
+    margin-bottom: 22px
+    box-sizing: border-box
+    outline: none
+    &:hover
+      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+  &__a
+    font-size: 11px
+    font-weight: bold
+    color: #4a4a4a
+    text-transform: uppercase
+    padding: 12px 14px
+    border: 1px solid #eaeaea
+    width: 84px
+    line-height: 11px
+    &:hover
+      color: $color-site
+      border-color: $color-site
+  &__p
+  &-total
+    height: 12px
+    display: flex
+    justify-content: space-between
+    padding-right: 43px
+    text-align: right
+    flex-direction: column
+    &__p
+      font-size: 11px
+      color: #4a4a4a
+      text-transform: uppercase
+      margin-bottom: 14px
+      width: 273px
+      text-align: right
+      &_span::before
+        content: "$"
+        margin-left: 17px
+
+
+    &__h1
+      font-size: 16px
+      font-weight: bold
+      color: #222222
+      text-transform: uppercase
+      width: 273px
+      text-align: right
+      border-bottom: 1px solid #e2e2e2
+      padding-bottom: 22px
+      margin-bottom: 17px
+      &_new
+        color: #f16d7f
+  &__button
+    font-size: 16px
+    font-weight: bold
+    color: #ffffff
+    text-transform: uppercase
+    background-color: $color-site
+    padding: 19px 42px
+    margin-bottom: 42px
+    border: 1px solid $color-site
+    &:hover
+      background-color: white
+      color: $color-site
+

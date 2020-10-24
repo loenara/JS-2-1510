@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GB1 Index</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top container">
+				<div class="header__left">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+
+					<div class="header__search">
+						<a href="#" class="header__browse">Browse<i
+							class="header__browseCaret fas fa-caret-down"></i></a>
+						<form class="header__searchForm">
+							<input type="search" class="header__searchBox"
+							placeholder="Search for item…"><button
+							class="header__searchBtn"><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<a href="#" class="header__cart" id="cartPopupButton"></a>
+					<div class="cartPopup hidden" id="cartPopup">
+						<ul class="cartPopup__items" id="cartPopupItems"></ul>
+						<div class="cartPopup__total">
+							<p class="cartPopup__totalLabel">Total</p>
+							<p class="cartPopup__totalValue" id="cartPopupTotal"></p>
+						</div>
+						<a href="checkout.html" class="cartPopup__checkout">Checkout</a>
+						<a href="cart.html" class="cartPopup__goToCart">Go to cart</a>
+					</div>
+					<a href="#" class="header__myAccount">My account<i
+						class="header__myAccountCaret fas fa-caret-down"></i></a>
+				</div>
+			</div>
+
+			<nav class="header__menu">
+				<a class="header__menuItem" href="#">Home</a>
+				<a class="header__menuItem" href="#">Men</a>
+				<a class="header__menuItem" href="#">Women</a>
+				<a class="header__menuItem" href="#">Kids</a>
+				<a class="header__menuItem" href="#">Accessories</a>
+				<a class="header__menuItem" href="#">Featured</a>
+				<a class="header__menuItem" href="#">Hot deals</a>
+			</nav>
+		</header>
+
+		<div class="top container">
+			<div class="top__text">
+				<h2 class="top__textFirst">The brand</h2>
+				<p class="top__textSecond">of luxurious
+					<span class="highlight">fashion</span></p>
+			</div>
+		</div>
+
+		<div class="promos container">
+			<div class="promos__item">
+				<img class="promos__img" src="../src/assets/img/promo-0.jpg" alt="">
+				<div class="promos__label">
+					<h3 class="promos__labelTitle">Hot deal</h3>
+					<p class="promos__labelSubtitle">For men</p>
+				</div>
+			</div>
+
+			<div class="promos__item">
+				<img class="promos__img" src="../src/assets/img/promo-1.jpg" alt="">
+				<div class="promos__label">
+					<h3 class="promos__labelTitle">Luxurious & trendy</h3>
+					<p class="promos__labelSubtitle">Accessories</p>
+				</div>
+			</div>
+
+			<div class="promos__item">
+				<img class="promos__img" src="../src/assets/img/promo-2.jpg" alt="">
+				<div class="promos__label">
+					<h3 class="promos__labelTitle">30% offer</h3>
+					<p class="promos__labelSubtitle">Women</p>
+				</div>
+			</div>
+
+			<div class="promos__item">
+				<img class="promos__img" src="../src/assets/img/promo-3.jpg" alt="">
+				<div class="promos__label">
+					<h3 class="promos__labelTitle">New arrivals</h3>
+					<p class="promos__labelSubtitle">For kids</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="featured container">
+			<h2 class="featured__title">Featured items</h2>
+			<p class="featured__subtitle">Shop for items based on what we featured
+				this week</p>
+			<div class="featured__items" id="featuredItems"></div>
+			<a href="#" class="featured__browseAll">Browse all products</a>
+		</div>
+
+		<div class="offer container">
+			<div class="offer__left">
+				<h2 class="offer__leftTitle">30%
+					<span class="highlight">offer</span></h2>
+				<p class="offer__leftSubtitle">for women</p>
+			</div>
+			<div class="offer__right">
+				<div class="offer__feature">
+					<h3 class="offer__featureTitle">Free delivery</h3>
+					<p class="offer__featureDesc">World&shy;wide de&shy;liv&shy;ery on
+						all. Au&shy;thor&shy;it&shy;at&shy;ively morph
+						next-gen&shy;er&shy;a&shy;tion in&shy;nov&shy;a&shy;tion with
+						ex&shy;tens&shy;ive mod&shy;els.</p>
+				</div>
+
+				<div class="offer__feature">
+					<h3 class="offer__featureTitle">Sales &amp; discount</h3>
+					<p class="offer__featureDesc">World&shy;wide de&shy;liv&shy;ery on
+						all. Au&shy;thor&shy;it&shy;at&shy;ively morph
+						next-gen&shy;er&shy;a&shy;tion in&shy;nov&shy;a&shy;tion with
+						ex&shy;tens&shy;ive mod&shy;els.</p>
+				</div>
+
+				<div class="offer__feature">
+					<h3 class="offer__featureTitle">Quality assurance</h3>
+					<p class="offer__featureDesc">World&shy;wide de&shy;liv&shy;ery on
+						all. Au&shy;thor&shy;it&shy;at&shy;ively morph
+						next-gen&shy;er&shy;a&shy;tion in&shy;nov&shy;a&shy;tion with
+						ex&shy;tens&shy;ive mod&shy;els.</p>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footerTop container">
+				<div class="footerTop__left">
+					<div class="footerTop__testimonial">
+						<img src="../src/assets/img/testimonial-photo.png" alt="Bin Burhan"
+							class="footerTop__testimonialPhoto">
+						<div class="footerTop__testimonialContent">
+							<p class="footerTop__testimonialText">“Vestibulum quis
+								porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+								condimentum a. Aliquam condimentum mattis neque sed
+								pretium”</p>
+							<p class="footerTop__testimonialName">Bin Burhan</p>
+							<p class="footerTop__testimonialLoc">Dhaka, BD</p>
+						</div>
+					</div>
+
+					<div class="footerTop__testimonialLinks">
+						<a href="#" class="footerTop__testimonialLink"></a>
+						<a href="#" class="footerTop__testimonialLink
+							footerTop__testimonialLinkCurrent"></a>
+						<a href="#" class="footerTop__testimonialLink"></a>
+					</div>
+				</div>
+
+				<div class="footerTop__right">
+					<div class="footerTop__subscribe">
+						<h3 class="footerTop__subscribeTitle">Subscribe</h3>
+						<p class="footerTop__subscribeSubtitle">for our newsletter and
+							promotion</p>
+
+						<form class="footerTop__subscribeForm">
+							<input type="email" class="footerTop__subscribeBox"
+								placeholder="Enter your email"><input type="submit"
+								class="footerTop__subscribeBtn" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="footerMid container">
+				<div class="footerMid__desc">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+					<p class="footerMid__text">Ob&shy;ject&shy;ively trans&shy;ition
+						ex&shy;tens&shy;ive data rather than cross func&shy;tion&shy;al
+						solu&shy;tions. Mono&shy;tonectally syn&shy;dic&shy;ate
+						mul&shy;tidiscip&shy;lin&shy;ary ma&shy;ter&shy;i&shy;als
+						be&shy;fore go for&shy;ward be&shy;ne&shy;fits.
+						In&shy;trins&shy;icly syn&shy;dic&shy;ate an ex&shy;pan&shy;ded
+						ar&shy;ray of pro&shy;cesses and cross-unit
+						part&shy;ner&shy;ships.</p>
+					<p class="footerMid__text">Ef&shy;fi&shy;ciently
+						pla&shy;gi&shy;ar&shy;ize 24/365 ac&shy;tion items and fo&shy;cused
+						in&shy;fomedi&shy;ar&shy;ies. Dis&shy;tinct&shy;ively seize
+						su&shy;per&shy;i&shy;or ini&shy;ti&shy;at&shy;ives for wire&shy;less
+						tech&shy;no&shy;lo&shy;gies. Dy&shy;nam&shy;ic&shy;ally
+						op&shy;tim&shy;ize.</p>
+				</div>
+
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Company</h3>
+					<a href="#" class="footerMid__link">Home</a>
+					<a href="#" class="footerMid__link">Shop</a>
+					<a href="#" class="footerMid__link">About</a>
+					<a href="#" class="footerMid__link">How it works</a>
+					<a href="#" class="footerMid__link">Contact</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Information</h3>
+					<a href="#" class="footerMid__link">Terms &amp; conditions</a>
+					<a href="#" class="footerMid__link">Privacy policy</a>
+					<a href="#" class="footerMid__link">How to buy</a>
+					<a href="#" class="footerMid__link">How to sell</a>
+					<a href="#" class="footerMid__link">Promotion</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Shop category</h3>
+					<a href="#" class="footerMid__link">Men</a>
+					<a href="#" class="footerMid__link">Women</a>
+					<a href="#" class="footerMid__link">Children</a>
+					<a href="#" class="footerMid__link">Apparel</a>
+					<a href="#" class="footerMid__link">Browse all</a>
+				</div>
+			</div>
+
+			<div class="footerBottom container">
+				<p class="footerBottom__copyright">&copy;&nbsp;2017 Brand. All rights
+					reserved.</p>
+
+				<div class="footerBottom__social">
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-facebook-f"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-twitter"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-pinterest-p"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-google-plus-g"></i></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

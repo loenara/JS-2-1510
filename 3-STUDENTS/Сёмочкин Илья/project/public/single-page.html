@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Collection</title>
+    <link rel="stylesheet" href="../src/layout/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__left">
+            <a href="index.html" class="header__logo"><img src="../src/assets/img/logo.png" alt="logo"> Bran<span>d</span></a>
+            <form action="#" class="header__search" method="get">
+                <input type="checkbox" id="browse-checkbox">
+                <label for="browse-checkbox" class="browse">Browse <i class="fas fa-caret-down"></i></label>
+                <label for="browse-checkbox" class="browse-active">Browse <i class="fas fa-caret-up"></i></label>
+                <div class="drop-down">
+                    <div>Women</div>
+                    <a href="#">Dresses</a>
+                    <a href="#">Tops</a>
+                    <a href="#">Sweaters/Knits</a>
+                    <a href="#">Jackets/Coats</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Leggings/Pants</a>
+                    <a href="#">Skirts/Shorts</a>
+                    <a href="#">Accessories</a>
+                    <div>Men</div>
+                    <a href="#">Tees/Tank tops</a>
+                    <a href="#">Shirts/Polos</a>
+                    <a href="#">Sweaters</a>
+                    <a href="#">Sweatshirts/Hoodies</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Jackets/vests</a>
+                </div>
+                <input name="search" type="text" placeholder="Search for Item...">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="header__cart">
+                <img src="../src/assets/img/cart.png" alt="cart" id="toggle-cart">
+                <div class="qty" id="qty"></div>
+                <div class="cart-dropdown hidden">
+                    <div id="checked-items"></div>
+                    <div class="cart-dropdown__buttons">
+                        <a href="checkout.html">checkout</a>
+                        <a href="shopping-cart.html">go to cart</a>
+                    </div>
+                </div>
+            </div>
+            <a class="header__account-bar" href="#">My Account <i class="fas fa-caret-down"></i></a>
+        </div>
+    </header>
+    <div class="header__line"></div>
+    <nav class="topNav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Man</a>
+        <a href="single-page.html">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Accoseriese</a>
+        <a href="#">Featured</a>
+        <a href="#">Hot Deals</a>
+    </nav>
+    <div class="new-arrivals-main">
+        <div class="new-arrivals container">
+            <h2>New Arrivals</h2>
+            <div class="new-arrivals__breadcrumbs"><a href="index.html">Home</a> / <a href="#">Men</a> / <a href="#">New Arrivals</a></div>
+        </div>
+    </div>
+    <div class="selected-item__main">
+        <a href="#"><i class="fas fa-angle-left"></i></a>
+        <div class="selected-item__inner container">
+            <img src="../src/assets/img/woman-selected-item.jpg" alt="woman-selected-item">
+        </div>
+        <a href="#"><i class="fas fa-angle-right"></i></a>
+    </div>
+    <div class="selected-product__info-main container">
+        <div class="selected-product__info-inner">
+            <div class="selected-product__info-inner-top">
+                <div>
+                    <h3>women collection</h3>
+                    <div><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                    <h2>Moschino Cheap And Chic</h2>
+                    <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                    <div>
+                        <div>material:&nbsp;<span>cotton</span></div>
+                        <div>designer:&nbsp;<span>binburhan</span></div>
+                    </div>
+                    <div>$561</div>
+                </div>
+            </div>
+            <div class="selected-product__info-inner-bottom">
+                <div>
+                    <div>
+                        <h3>choose color</h3>
+                        <div>
+                            <div><img src="../src/assets/img/red-color.png" alt="red-color"></div>
+                            <input type="text" placeholder="Red">
+                            <a href="#"><i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>choose size</h3>
+                        <div>
+                            <input type="text" placeholder="XXL">
+                            <a href="#"><i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>quantity</h3>
+                        <div><input type="number" value="2"></div>
+                    </div>
+                    <a href="#"><img src="../src/assets/img/cart-red.svg" alt="cart-red"> Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="matched-items container">
+        <div class="matched-items__header">you may like also</div>
+        <div id="items-matched" class="matched-items__list">
+            <!-- этот блок заполняется с помощью js-логики -->
+        </div>
+    </div>
+    <div class="subscribe-parent">
+        <div class="subscribe container">
+            <div class="subscribe-left">
+                <div class="subscribe-left__content">
+                    <div class="subscribe-left__content-photo"><img src="../src/assets/img/subscribe-woman-photo.jpg" alt="subscribe-woman-photo"></div>
+                    <div class="subscribe-left__text">
+                        <p class="subscribe-left__text-main">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <div class="subscribe-left__text-main-author1">Bin Burhan</div>
+                        <div class="subscribe-left__text-main-author2">Dhaka, Bd</div>
+                    </div>
+                    <div class="pagination-rectangle">
+                        <a href="#"></a><a href="#"></a><a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-right">
+                <div class="subscribe-right__header">
+                    <div class="subscribe-right__header-top">Subscribe</div>
+                    <div class="subscribe-right__header-bottom">for our newsletter and promotion</div>
+                </div>
+                <form action="#" class="subscribe-right__form" method="get">
+                    <input name="search" type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="various-info container">
+        <div class="brand__about">
+            <h2 class="header__logo"><img src="../src/assets/img/logo.png" alt="logo"> Bran<span>d</span></h2>
+            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p><br>
+            <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <div class="brand__various-links">
+            <div class="brand__various-links__list">
+                <h2>company</h2>
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="brand__various-links__list">
+                <h2>information</h2>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
+            </div>
+            <div class="brand__various-links__list">
+                <h2>shop category</h2>
+                <a href="product.html">Men</a>
+                <a href="single-page.html">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Browse All</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer container">
+            <div class="copyright">&copy; 2020  Brand  All Rights Reserved.</div>
+            <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-pinterest-p"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+        </div>
+    </div>
+    <script>
+        
+        const NAMES = ['Mango People T-Shirt', 'Banana People T-Shirt', 'Strawberry People T-Shirt', 'Orange People T-Shirt'];
+        const PRICES = [52, 53, 55, 67,];
+
+        //
+        const catalog = {
+            items: [],
+            container: null,
+            imgURL: 'https://raw.githubusercontent.com/Eliasz-S/static/main/JS1_shop',
+            init() { 
+                this.container = document.querySelector('#items-matched');
+                this.items = getItems(); 
+                this.render(); 
+            },
+            render() { 
+                let htmlStr = ''; 
+                this.items.forEach((item, index) => {
+                    let imgURL = `${this.imgURL}/matched-item${index + 1}.png`;
+                    htmlStr += `
+                        <div class="featured-items__item">
+                            <div class="featured-items__item-top"><img src="${imgURL}" alt="featured-items-${index + 1}">
+                                <div class="add-hover-div">
+                                    <div>
+                                        <button name="add"
+                                            data-id="${item.productId}"
+                                            data-name="${item.productName}"
+                                            data-img="${imgURL}"
+                                            data-price="${item.productPrice}"
+                                        ><img src="../src/assets/img/cart_small.png" alt="cart_small">Add to Cart</button>
+                                        <a href="#"><i class="fas fa-retweet"></i></a>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-items__item-bottom">
+                                <div>${item.productName}</div>
+                                <div>$${item.productPrice}.00</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                this.container.innerHTML = htmlStr;
+            }
+        }
+
+        catalog.init();
+        //
+
+        function createNewItem(name, price) {
+            return {
+                productName: name,
+                productPrice: price
+            }
+        }
+
+        function getItems() {
+            return NAMES.map((name, index) => createNewItem(NAMES[index], PRICES [index]));
+        }
+        
+
+    </script>
+    <script src="../src/components/cart.js"></script>
+</body>
+</html>

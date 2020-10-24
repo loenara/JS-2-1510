@@ -15,5 +15,19 @@ npm i bootstrap jquery popper.js
 npm run build
 
 
+Плагины:
+npm i -D html-webpack-plugin mini-css-extract-plugin copy-webpack-plugin
+
+Лоадеры (подгрузка):
+npm i -D css-loader file-loader
+
+
+npm i -D webpack-dev-server
+# Для запуска:
+npm run serve
+
+
+
+
 
 npm i (установка всех зависимостей с помощью файла package.json)

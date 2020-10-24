@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GB1 Cart</title>
+		<link rel="stylesheet" href="../src/layout/css/common.css">
+		<link rel="stylesheet" href="../src/layout/css/cart.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top container">
+				<div class="header__left">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+
+					<div class="header__search">
+						<a href="#" class="header__browse">Browse<i
+							class="header__browseCaret fas fa-caret-down"></i></a>
+						<form class="header__searchForm">
+							<input type="search" class="header__searchBox"
+							placeholder="Search for item…"><button
+							class="header__searchBtn"><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<a href="#" class="header__cart" id="cartPopupButton"></a>
+					<div class="cartPopup hidden" id="cartPopup">
+						<ul class="cartPopup__items" id="cartPopupItems"></ul>
+						<div class="cartPopup__total">
+							<p class="cartPopup__totalLabel">Total</p>
+							<p class="cartPopup__totalValue" id="cartPopupTotal"></p>
+						</div>
+						<a href="checkout.html" class="cartPopup__checkout">Checkout</a>
+						<a href="cart.html" class="cartPopup__goToCart">Go to cart</a>
+					</div>
+					<a href="#" class="header__myAccount">My account<i
+						class="header__myAccountCaret fas fa-caret-down"></i></a>
+				</div>
+			</div>
+
+			<nav class="header__menu">
+				<a class="header__menuItem" href="#">Home</a>
+				<a class="header__menuItem" href="#">Men</a>
+				<a class="header__menuItem" href="#">Women</a>
+				<a class="header__menuItem" href="#">Kids</a>
+				<a class="header__menuItem" href="#">Accessories</a>
+				<a class="header__menuItem" href="#">Featured</a>
+				<a class="header__menuItem" href="#">Hot deals</a>
+			</nav>
+		</header>
+
+		<div class="breadcrumbs container">
+			<h2 class="breadcrumbs__title">New arrivals</h2>
+			<div class="breadcrumbs__links">
+				<a href="#" class="breadcrumbs__link">Home</a> /
+				<a href="#" class="breadcrumbs__link">Men</a> /
+				<a href="#" class="breadcrumbs__linkCurrent">New arrivals</a>
+			</div>
+		</div>
+
+		<!-- Чем вам так не угодили HTML-таблицы? o_O -->
+		<table class="cart">
+			<thead>
+				<tr>
+					<th class="cart__detailsHeader">Product details</th>
+					<th>Unit price</th>
+					<th>Quantity</th>
+					<th>Shipping</th>
+					<th>Subtotal</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td class="cart__detailsCell">
+						<img class="cart__img" src="../src/assets/img/cart-0.jpg"
+							alt="Mango people T-shirt">
+						<div class="cart__details">
+							<h3 class="cart__title">Mango people T-shirt</h3>
+							<p><span class="cart__detailName">Color:</span> Red</p>
+							<p><span class="cart__detailName">Size:</span> XII</p>
+						</div>
+					</td>
+					<td class="cart__data">$150</td>
+					<td class="cart__data"><input class="cart__qtyBox" value="2"></td>
+					<td class="cart__data">FREE</td>
+					<td class="cart__data">$300</td>
+					<td><button class="cart__deleteBtn"><i
+						class="fas fa-times-circle"></i></button></td>
+				</tr>
+
+				<tr>
+					<td class="cart__detailsCell">
+						<img class="cart__img" src="../src/assets/img/cart-1.jpg"
+							alt="Mango people T-shirt">
+						<div class="cart__details">
+							<h3 class="cart__title">Mango people T-shirt</h3>
+							<p><span class="cart__detailName">Color:</span> Red</p>
+							<p><span class="cart__detailName">Size:</span> XII</p>
+						</div>
+					</td>
+					<td class="cart__data">$150</td>
+					<td class="cart__data"><input class="cart__qtyBox" value="2"></td>
+					<td class="cart__data">FREE</td>
+					<td class="cart__data">$300</td>
+					<td><button class="cart__deleteBtn"><i
+						class="fas fa-times-circle"></i></button></td>
+				</tr>
+
+				<tr>
+					<td class="cart__detailsCell">
+						<img class="cart__img" src="../src/assets/img/cart-2.jpg"
+							alt="Mango people T-shirt">
+						<div class="cart__details">
+							<h3 class="cart__title">Mango people T-shirt</h3>
+							<p><span class="cart__detailName">Color:</span> Red</p>
+							<p><span class="cart__detailName">Size:</span> XII</p>
+						</div>
+					</td>
+					<td class="cart__data">$150</td>
+					<td class="cart__data"><input class="cart__qtyBox" value="2"></td>
+					<td class="cart__data">FREE</td>
+					<td class="cart__data">$300</td>
+					<td><button class="cart__deleteBtn"><i
+						class="fas fa-times-circle"></i></button></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="controls container">
+			<button class="controls__btn">Clear shopping cart</button>
+			<button class="controls__btn">Continue shopping</button>
+		</div>
+
+		<div class="forms container">
+			<form>
+				<h2 class="forms__title">Shipping address</h2>
+				<input type="text" placeholder="Bangladesh">
+				<input type="text" placeholder="State">
+				<input type="text" placeholder="Postcode/ZIP">
+				<input type="submit" value="Get a quote">
+			</form>
+
+			<form>
+				<h2 class="forms__title">Coupon discount</h2>
+				<p class="forms__subtitle">Enter your coupon code if you have one</p>
+				<input type="text" placeholder="Coupon code">
+				<input type="submit" value="Apply coupon">
+			</form>
+
+			<div class="forms__totals">
+				<p class="forms__subtotal">Subtotal
+					<span class="forms__subtotalValue">$900</span></p>
+				<p class="forms__grandTotal">Grand total
+					<span class="forms__grandTotalValue">$900</span></p>
+				<hr class="forms__totalsHr">
+				<input class="forms__checkout" type="submit"
+					value="Proceed to checkout">
+			</div>
+		</div>
+
+		<footer>
+			<div class="footerTop container">
+				<div class="footerTop__left">
+					<div class="footerTop__testimonial">
+						<img src="../src/assets/img/testimonial-photo.png" alt="Bin Burhan"
+							class="footerTop__testimonialPhoto">
+						<div class="footerTop__testimonialContent">
+							<p class="footerTop__testimonialText">“Vestibulum quis
+								porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+								condimentum a. Aliquam condimentum mattis neque sed
+								pretium”</p>
+							<p class="footerTop__testimonialName">Bin Burhan</p>
+							<p class="footerTop__testimonialLoc">Dhaka, BD</p>
+						</div>
+					</div>
+
+					<div class="footerTop__testimonialLinks">
+						<a href="#" class="footerTop__testimonialLink"></a>
+						<a href="#" class="footerTop__testimonialLink
+							footerTop__testimonialLinkCurrent"></a>
+						<a href="#" class="footerTop__testimonialLink"></a>
+					</div>
+				</div>
+
+				<div class="footerTop__right">
+					<div class="footerTop__subscribe">
+						<h3 class="footerTop__subscribeTitle">Subscribe</h3>
+						<p class="footerTop__subscribeSubtitle">for our newsletter and
+							promotion</p>
+
+						<form class="footerTop__subscribeForm">
+							<input type="email" class="footerTop__subscribeBox"
+								placeholder="Enter your email"><input type="submit"
+								class="footerTop__subscribeBtn" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="footerMid container">
+				<div class="footerMid__desc">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+					<p class="footerMid__text">Ob&shy;ject&shy;ively trans&shy;ition
+						ex&shy;tens&shy;ive data rather than cross func&shy;tion&shy;al
+						solu&shy;tions. Mono&shy;tonectally syn&shy;dic&shy;ate
+						mul&shy;tidiscip&shy;lin&shy;ary ma&shy;ter&shy;i&shy;als
+						be&shy;fore go for&shy;ward be&shy;ne&shy;fits.
+						In&shy;trins&shy;icly syn&shy;dic&shy;ate an ex&shy;pan&shy;ded
+						ar&shy;ray of pro&shy;cesses and cross-unit
+						part&shy;ner&shy;ships.</p>
+					<p class="footerMid__text">Ef&shy;fi&shy;ciently
+						pla&shy;gi&shy;ar&shy;ize 24/365 ac&shy;tion items and fo&shy;cused
+						in&shy;fomedi&shy;ar&shy;ies. Dis&shy;tinct&shy;ively seize
+						su&shy;per&shy;i&shy;or ini&shy;ti&shy;at&shy;ives for wire&shy;less
+						tech&shy;no&shy;lo&shy;gies. Dy&shy;nam&shy;ic&shy;ally
+						op&shy;tim&shy;ize.</p>
+				</div>
+
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Company</h3>
+					<a href="#" class="footerMid__link">Home</a>
+					<a href="#" class="footerMid__link">Shop</a>
+					<a href="#" class="footerMid__link">About</a>
+					<a href="#" class="footerMid__link">How it works</a>
+					<a href="#" class="footerMid__link">Contact</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Information</h3>
+					<a href="#" class="footerMid__link">Terms &amp; conditions</a>
+					<a href="#" class="footerMid__link">Privacy policy</a>
+					<a href="#" class="footerMid__link">How to buy</a>
+					<a href="#" class="footerMid__link">How to sell</a>
+					<a href="#" class="footerMid__link">Promotion</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Shop category</h3>
+					<a href="#" class="footerMid__link">Men</a>
+					<a href="#" class="footerMid__link">Women</a>
+					<a href="#" class="footerMid__link">Children</a>
+					<a href="#" class="footerMid__link">Apparel</a>
+					<a href="#" class="footerMid__link">Browse all</a>
+				</div>
+			</div>
+
+			<div class="footerBottom container">
+				<p class="footerBottom__copyright">&copy;&nbsp;2017 Brand. All rights
+					reserved.</p>
+
+				<div class="footerBottom__social">
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-facebook-f"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-twitter"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-pinterest-p"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-google-plus-g"></i></a>
+				</div>
+			</div>
+		</footer>
+		<!-- add missing scripts here -->
+	</body>
+</html>

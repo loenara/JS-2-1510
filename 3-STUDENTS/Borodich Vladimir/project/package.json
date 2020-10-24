@@ -4,14 +4,20 @@
   "description": "It is project of my course professional javascript",
   "main": "index.js",
   "scripts": {
-    "test": "webpack",
-    "build": "webpack --mode production ",
-    "build-dev": "webpack --mode development --watch"
+    "build": "webpack ",
+    "build-dev": "webpack --mode development ",
+    "serve": "webpack-dev-server"
   },
   "author": "Wowankz",
   "license": "ISC",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.2.1",
+    "css-loader": "^5.0.0",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.0.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

@@ -1,0 +1,295 @@
+@import "variables"
+
+.product__main
+  display: flex
+  flex-direction: row
+
+  &-menu
+    width: 293px
+    display: flex
+    flex-direction: column
+    margin-top: 50px
+
+    &-item
+      margin-top: 9px
+      margin-bottom: 9px
+      display: flex
+      flex-direction: column
+      width: 232px
+      border-bottom: 1px solid #ebebeb
+
+
+      &-margin
+        margin-left: 11px
+
+      &-dropDownMenu
+        margin-top: 27px
+        width: 232px
+        display: none
+        height: 456px
+
+        &-list
+          list-style-type: none
+          padding: 0
+
+        &-link
+          a
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: $textBold
+            line-height: 33px
+            text-decoration: none
+            margin-left: 10px
+            margin-top: 5px
+            margin-bottom: 5px
+
+      input
+        display: none
+
+      &-border
+        border-left: 5px solid $mainColour
+        line-height: 37px
+        height: 37px
+
+        label
+          display: flex
+          justify-content: space-between
+          width: 232px
+          line-height: 37px
+          height: 37px
+
+
+          span
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: $textBold
+            line-height: 37px
+            text-transform: uppercase
+
+      input:checked
+        ~ .product__main-menu-item-dropDownMenu
+          display: flex
+          flex-direction: row
+
+      input:checked
+        ~ label span
+          color: $mainColour
+
+  &-contente
+    width: 847px
+    display: flex
+    flex-direction: column
+
+    &-top
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      margin-top: 71px
+
+      &-column
+        width: 33.3%
+
+        &-caption
+          color: #6f6e6e
+          font-size: 14px
+          font-weight: $textBold
+          line-height: 20px
+          text-transform: uppercase
+
+        &-types
+          margin-top: 25px
+          width: 205px
+          color: #dfdfdf
+          font-size: 14px
+          font-weight: $textBold
+
+          a
+            text-decoration: none
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: $textMain
+            line-height: 26px
+            margin-right: 12px
+
+          &-marginLeft
+            margin-left: 12px
+
+        &-sizes
+          margin-top: 25px
+          line-height: 25px
+
+          label
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: $textMain
+            line-height: 20px
+            text-transform: uppercase
+            margin-right: 25px
+
+
+        &-priceRange
+          margin-top: 20px
+
+          input
+            width: 100%
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+
+          input[type=range]::-webkit-slider-runnable-track
+            border-radius: 10px/100%
+            height: 7px
+            border: 1px solid $mainColour
+            background-color: $mainColour
+
+          input[type=range]::-webkit-slider-thumb
+            background: $mainColour
+            border: 1px solid $mainColour
+            border-radius: 10px/100%
+            cursor: pointer
+            width: 15px
+            height: 15px
+            -webkit-appearance: none
+            margin-top: -4px
+
+          input[type=range]::-moz-range-track
+            border-radius: 10px/100%
+            height: 5px
+            border: 1px solid $mainColour
+            background-color: $mainColour
+
+          input[type=range]::-moz-range-thumb
+            background: $mainColour
+            border: 1px solid $mainColour
+            border-radius: 10px/100%
+            cursor: pointer
+
+        &-price
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          margin-top: 17px
+
+          &-value
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: $textMain
+
+    &-sort
+      margin-top: 43px
+      width: 100%
+      height: 50px
+      background-color: #f3f3f3
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      &-types
+        margin-left: 9px
+        width: 66px
+        height: 28px
+        border: 1px solid #ebebeb
+        background-color: #ffffff
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: $textMain
+        line-height: 26px
+        text-align: center
+        padding-top: 2px
+
+      select
+        width: 86px
+        height: 32px
+        border: 1px solid #ebebeb
+        background-color: #ffffff
+        border-collapse: collapse
+
+    &-bottom
+      margin-top: 43px
+      display: flex
+      justify-content: space-between
+      flex-direction: row
+
+      &-pages
+        width: 261px
+        height: 42px
+        border-radius: 3px
+        border: 1px solid #ebebeb
+        background-color: #ffffff
+        display: flex
+        flex-direction: row
+
+        a
+          display: block
+          text-decoration: none
+          color: #aaaaaa
+          font-size: 16px
+          font-weight: $textBold
+          line-height: 26.15px
+          padding-top: 9px
+
+          &:hover
+            color: $mainColour
+
+        &-Margin
+          margin-left: 16px
+
+          &-top
+            padding-top: 9px
+            color: #aaaaaa
+            font-size: 16px
+            font-weight: $textBold
+            line-height: 26.15px
+
+      &-button
+        width: 150px
+        height: 42px
+        border-radius: 3px
+        border: 1px solid $mainColour
+        background-color: #ffffff
+        color: $mainColour
+        font-size: 16px
+        font-weight: $textBold
+        line-height: 26px
+        padding-top: 2px
+
+        &:hover
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5)
+
+.product__conditions
+  margin-top: 110px
+  width: 100%
+  height: 341px
+  background-color: #222224
+
+  &-contente
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &-block
+    width: 33%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &-img
+    margin-top: 89px
+    height: 40px
+
+  &-caption
+    margin-top: 23px
+    color: #fbfbfb
+    font-size: 20px
+    font-weight: $textBold
+    letter-spacing: 0.5px
+    text-align: center
+
+  &-description
+    margin-top: 21px
+    color: #fbfbfb
+    font-size: 14px
+    font-weight: $textThin
+    letter-spacing: 0.35px
+    width: 308px
+    text-align: center

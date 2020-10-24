@@ -1,0 +1,255 @@
+@import "variables"
+
+.firstImage
+  width: 100%
+  height: 613px
+  background-color: #e8e8e8
+  margin: 0 auto
+
+  &__contente
+    display: flex
+    justify-content: space-between
+
+    &-left
+      display: flex
+      justify-content: flex-start
+      align-items: center
+
+      &-line
+        margin-top: 5px
+        border-right: 12px solid $mainColour
+        height: 92px
+
+      &-text
+        margin-left: 12px
+        width: 490px
+        color: $secondColour
+        font-size: 40px
+        font-weight: $textMain
+        text-transform: uppercase
+        letter-spacing: 1px
+
+      &-bigtext
+        font-size: 60px
+        letter-spacing: 1.5px
+        font-weight: $textVeryBold
+
+      &-pinktext
+        color: $mainColour
+        font-weight: $textMain
+
+    &-right
+      margin-right: 70px
+
+.typeBar
+  height: 950px
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: space-between
+
+
+  &__products_and-offers1
+    position: relative
+    margin-top: 98px
+    width: 560px
+    height: 542px
+    background-image: url(../../../assets/img/ForMan.jpg)
+
+
+  &__products_and-offers1-contente
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 26px
+    padding-top: 16px
+    padding-left: 19px
+    font-weight: $textBold
+    color: $secondColour
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    height: 66px
+    width: 156px
+    background-color: #fff
+    align-items: left
+
+
+
+  &__products_and-offers1-contente span
+    color: $mainColour
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-weight: $textBold
+    background-color: #fff
+
+
+  &__products_and-offers2
+    position: relative
+    width: 560px
+    height: 261px
+
+
+  &__products_and-offers2-contente
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 26px
+    padding-top: 16px
+    padding-left: 19px
+    color: $secondColour
+    font-size: 18px
+    font-weight: $textBold
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    width: 204px
+    height: 66px
+    background-color: #fff
+    text-align: left
+
+  &__products_and-offers2-contente span
+    color: $mainColour
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-weight: $textBold
+    background-color: #fff
+
+
+  &__products_and-offers3
+    position: relative
+    margin-top: 98px
+    width: 560px
+    height: 261px
+    background-image: url(../../../assets/img/women.jpg)
+
+
+  &__products_and-offers3-contente
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 26px
+    padding-top: 16px
+    color: $secondColour
+    font-size: 18px
+    padding-left: 19px
+    font-weight: $textBold
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    width: 143px
+    height: 66px
+    background-color: #fff
+    text-align: left
+
+  &__products_and-offers3-contente span
+    color: $mainColour
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-weight: $textBold
+    background-color: #fff
+
+
+  &__products_and-offers4
+    position: relative
+    width: 560px
+    height: 542px
+    background-image: url(../../../assets/img/forKids.jpg)
+
+
+  &__products_and-offers4-contente
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 26px
+    padding-top: 16px
+    padding-left: 19px
+    font-weight: $textBold
+    color: $secondColour
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    width: 161px
+    height: 66px
+    background-color: #fff
+    text-align: left
+
+  &__products_and-offers4-contente span
+    color: $mainColour
+    font-size: 30px
+    letter-spacing: 0.75px
+    font-weight: $textBold
+    background-color: #fff
+
+.mainSpecialOffer
+  margin-top: 113px
+  height: 700px
+  display: flex
+  justify-content: space-between
+
+  &__left
+    width: 767px
+    height: 529px
+    background-image: url(../../assets/img/bgOffer.jpg)
+    margin: 0
+    padding: 0
+
+    span
+      color: $mainColour
+      letter-spacing: 1.5px
+      text-transform: uppercase
+      font-weight: $textBold
+
+  &__discount
+    margin-top: 136px
+    margin-left: 39px
+    width: 304px
+    height: 78px
+
+  &__discountValue
+    color: #ffffff
+    font-size: 54px
+    font-weight: $textBold
+    text-transform: uppercase
+    letter-spacing: 1.5px
+
+  &__discountTarget
+    color: #ffffff
+    font-weight: $textBold
+    text-transform: uppercase
+    font-size: 32px
+    letter-spacing: 0.9px
+
+  &__rigth
+    display: flex
+    flex-direction: column
+    width: 373px
+    height: 529px
+    background-color: #222224
+
+
+    &-block
+      height: 33%
+      position: relative
+
+      img
+        margin-left: 36px
+        margin-top: 38px
+
+    &-caption
+      position: absolute
+      top: 0
+      left: 0
+      margin-left: 114px
+      margin-top: 40px
+      color: #fbfbfb
+      font-size: 20px
+      font-weight: $textBold
+      letter-spacing: 0.5px
+
+    &-description
+      margin-top: 17px
+      margin-left: 114px
+      color: #fbfbfb
+      font-size: 14px
+      font-weight: $textThin
+      letter-spacing: 0.35px
+      width: 219px

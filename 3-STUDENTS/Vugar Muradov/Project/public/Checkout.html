@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../src/assets/img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../src/layout/styles/style.css">
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header container"> <a href="Index.html" class="logoBrand">Bran<span>D</span></a>
+        <form action="#" class="search">
+            <label class="searchBrowse">Browse&nbsp;&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></label>
+            <datalist>
+                <option value="man"></option>
+                <option value="women"></option>
+                <option value="kids"></option>
+            </datalist>
+            <input name="search" type="text" placeholder="Search for Item...">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <div class="headerCart">
+            <div class="shoppingCart"><a href="Shopping%20Cart.html"><img src="../src/assets/img/cart.png" alt="headerCart"></a>
+                <div class="shoppingCartOpen">
+                    <div class="shoppingCartOpenWrapper">
+                        <div class="cartProduct" id="basket">
+                        </div>
+                        <div class="total500">
+                            <div>TOTAL</div>
+                            <div>$500.00</div>
+                        </div>
+                        <a class="headerCheckoutButton" href="Checkout.html" target="_blank">CHECKOUT</a>
+                        <a href="Shopping%20Cart.html" class="headerGoToCartButton" target="_blank">GO TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="accountButton">My Account&nbsp;&nbsp;<i class="fas fa-caret-down" aria-hidden="true"></i></button>
+    </header>
+    <div class="headerLine"></div>
+    <nav class="topNav"> <a href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a href="#">Accoseriese</a> <a href="#">Featured</a> <a href="#">Hot Deals</a> </nav>
+    <div class="breadcrumbBlock">
+        <div class="container arrival">
+            <div class="arrivalText">New Arrivals</div>
+            <div class="breadcrumbs">Home / Men /<span class="activeCrump"> New Arrivals</span></div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="checkoutShippingAdress">
+                        <div class="shippAddress"><b>01. Shipping Adress</b></div>
+                        <div class="leftDiv">
+                            <div>Check as a guest or register</div>
+                            <div>Register with us for future convenience</div>
+                            <form action="">
+                                <input id="registerCheckoutAsGuestInput" type="radio" name="MyRadios" value="checkoutAsGuest">
+                                <label class="registerCheckoutAsGuest-label">CHECKOUT AS GUEST</label>
+                                <br>
+                                <input id="registerCheckoutAsGuestInput" type="radio" name="MyRadios" value="register" checked>
+                                <label class="registerCheckoutAsGuest-label">REGISTER</label>
+                            </form>
+                            <div>register and save time!</div>
+                            <div>Register with us for future convenience</div>
+                            <div><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Fast and easy checkout</div>
+                            <div><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>Easy access to your order history and status</div>
+                            <button>Continue</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="alreadyRegisted">
+                        <div>Already registed?</div>
+                        <div>Please log in below</div>
+                        <form>
+                            <label>EMAIL ADDRESS<span>*</span></label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp">
+                            <label>PASSWORD<span>*</span></label>
+                            <input type="password" class="form-control">
+                            <div>* Required Fileds</div>
+                            <button type="submit" class="btn btn-primary">LOG IN</button><span class="forgotPassword">Forgot Password ? </span></form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="billingInformation">
+                    <div class="headerLine"></div> <span>02. BILLING INFORMATION </span>
+                    <div class="headerLine"></div> <span>03. SHIPPING INFORMATION</span>
+                    <div class="headerLine"></div> <span>04. SHIPPING METHOD</span>
+                    <div class="headerLine"></div> <span>05. PAYMENT METHOD</span>
+                    <div class="headerLine"></div> <span>06. ORDER REVIEW</span>
+                    <div class="headerLine"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="reviewSubscribe">
+        <div class="container reviewSubscribeFit">
+            <div class="review">
+                <div class="customerPhoto"></div>
+                <div class="customerReviewAndLine">
+                    <div class="customerReview"><i>&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed pretium&raquo;</i></div>
+                    <div class="customerReviewName"><span class="reviewName">Bin Burhan</span>
+                        <br> <span class="reviewCity">Dhaka, Bd</span></div>
+                    <div class="customerLine"><img src="../src/assets/img/3layers.png" alt="layers"></div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="subscribe">
+                <div class="subEmailText1">Subscribe</div>
+                <div class="subEmailText2">FOR OUR NEWLETTER AND PROMOTION</div>
+                <div>
+                    <input name="search" type="text" placeholder="Enter Your Email" class="subEmailButton">
+                    <button class="myRedButton">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container description">
+            <div class="descriptionFirst">
+                <div class="logoBrand">Bran<span>D</span></div>
+                <div class="descriptionText">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+                    <br>
+                    <br> Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</div>
+            </div>
+            <nav class="naviBar">
+                <div class="naviBarList"><span class="naviBarLetters">COMPANY</span>
+                    <br> <a href="#">Home</a>
+                    <br><a href="#">Shop</a>
+                    <br><a href="#">About</a>
+                    <br><a href="#">How It Works</a>
+                    <br><a href="#">Contanct</a></div>
+                <div class="naviBarList"><span class="naviBarLetters">INFORMATION</span>
+                    <br><a href="#">Tearms &amp; Condition</a>
+                    <br> <a href="#">Privacy Policy</a>
+                    <br><a href="#">How to Buy</a>
+                    <br> <a href="#">How to Sell</a>
+                    <br> <a href="#">Promotion</a> </div>
+                <div class="naviBarList"><span class="naviBarLetters">SHOP CATEGORY</span>
+                    <br><a href="#">Man</a>
+                    <br><a href="#">Women</a>
+                    <br> <a href="#">Child</a>
+                    <br><a href="#">Apparel</a>
+                    <br><a href="#">Brows All</a></div>
+            </nav>
+        </div>
+    </footer>
+    <div class="footerRights">
+        <div class="container rights">
+            <div class="rightText">© 2017 Brand All Rights Reserved.</div>
+            <div class="social"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a> </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

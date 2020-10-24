@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function request(url) { //то, что происходит внутри фетча
+            return new Promise((res, rej) => {
+                let xhr = new XMLHttpRequest();
+                //console.log(xhr)
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) { //readyState - это статус запроса
+                        //вот тут xhr закончился
+                        if (xhr.status === 200) {
+                            //200 - ok (404 - not found, 500 - server error)
+                            res(xhr.responseText);
+                        } else {
+                            rej('error');
+                        }
+                    }
+                }
+
+                xhr.open('GET', url, true);
+                xhr.send(); //тут он улетел
+            })
+        }
+
+
+        let catalog = {
+            items: [],
+            url: 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json',
+            init() {
+                this._get(this.url)
+                    .then(items => {
+                        this.items = items;
+                    })
+            },
+            _get(url) {
+                return request(url)
+                        .then(d => JSON.parse(d))
+            }
+        }
+
+
+        let catalog2 = {
+            items: [],
+            url: 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses/catalogData.json',
+            init() {
+                this._get(this.url)
+                    .then(items => {
+                        this.items = items;
+                    })
+            },
+            _get(url) {
+                return fetch(this.url) //фетч заранее описан и функционирует прим. как описано в ф-ции async
+                        .then(d => d.json())
+            }
+        }
+    </script>
+</body>
+</html>

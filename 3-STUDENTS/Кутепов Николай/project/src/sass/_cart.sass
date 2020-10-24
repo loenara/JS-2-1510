@@ -1,0 +1,227 @@
+@import "variables"
+.new-arrivals
+  width: 100%
+  background-color: #f8f3f4
+.new-arrivals__inside
+  justify-content: space-between
+  align-items: center
+  h1 a
+    display: block
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 24px
+    font-weight: 900
+    color: $color-red
+    margin-top: 60px
+    margin-bottom: 60px
+  .bread-crumps
+    display: flex
+    li
+      list-style: none
+      &:not(:last-child)::after
+        content: $span
+        margin-left: 4px
+        margin-right: 7px
+      a
+        text-decoration: none
+        font-size: 14px
+        font-weight: 300
+        color: #636363
+        text-transform: uppercase
+        &:hover
+          color: $color-red
+        &.bread-crumps__active
+          color: $color-red
+          font-weight: bold
+.main
+  flex-direction: column
+  .main__title
+    width: 100%
+    margin-top: 70px
+    justify-content: space-between
+    text-transform: uppercase
+    font-size: 13px
+    font-weight: bold
+    letter-spacing: -0.2px
+    border-bottom: solid 1px #eaeaea
+    h3
+      margin-bottom: 17px
+  .main__content
+    width: 100%
+    margin-top: 2px
+    padding-bottom: 23px
+    padding-top: 22px
+    border-bottom: solid 1px #eaeaea
+    justify-content: space-between
+    align-items: center
+    .main__table-cell-2, .main__table-cell-3, .main__table-cell-4, .main__table-cell-5
+      font-size: 13px
+      color: #656565
+      text-transform: uppercase
+    .main__content-cell-1
+      display: flex
+      align-items: center
+      .main__table-cell-1-stars
+        margin: 0
+        margin-bottom: 15px
+      img
+        margin-right: 21px
+      h3
+        margin: 0
+        text-transform: uppercase
+        font-size: 13px
+        margin-bottom: 11px
+        a
+          text-decoration: none
+          color: #656565
+          &:hover
+            color: $color-red
+      p
+        margin: 0
+        font-size: 13px
+        span
+          font-weight: bold
+        &:nth-child(3)
+          margin-bottom: 5px
+.main__table-cell-1
+  min-width: 280px
+.main__table-cell-2, .main__table-cell-3, .main__table-cell-4
+  min-width: 90px
+  text-align: center
+.main__table-cell-5
+  min-width: 80px
+  text-align: center
+.main__table-cell-6
+  min-width: 60px
+  text-align: center
+  & > a
+    color: #656565
+  a:hover
+    color: $color-red
+.cart-buttons
+  display: flex
+  justify-content: space-between
+  margin-top: 44px
+  margin-bottom: 63px
+  a
+    display: block
+    border: 1px solid #eaeaea
+    padding: 20px 38px 18px 39px
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 14px
+    font-weight: bold
+    color: #4a4a4a
+    &:hover
+      color: $color-red
+      border-color: $color-red
+.address-coupon-total
+  width: 100%
+  display: flex
+  justify-content: space-between
+  .address-coupon-total-column
+    display: flex
+    flex-direction: column
+    h2
+      text-transform: uppercase
+      font-size: 16px
+      font-weight: bold
+      margin-top: 0
+      margin-bottom: 22px
+    input
+      border: 1px solid #eaeaea
+    input[type='text']
+      height: 45px
+      width: 355px
+      padding-left: 18px
+      padding-right: 18px
+      font-size: 13px
+      font-weight: 300
+      box-sizing: border-box
+      &::placeholder
+        font-size: 13px
+        font-weight: 300
+        color: #b1b1b1
+    input[type='text']:first-child
+      margin-right: -35px
+      padding-right: 35px
+    & input:nth-child(3)
+      margin-bottom: 20px
+      margin-top: 20px
+    & input:nth-child(4)
+      margin-bottom: 23px
+    input[type='submit']
+      padding-left: 15px
+      padding-right: 15px
+      margin-top: 3px
+      width: fit-content
+      height: 35px
+      font-size: 11px
+      font-weight: bold
+      background-color: #ffffff
+      color: #4a4a4a
+      text-transform: uppercase
+      &:hover
+        cursor: pointer
+        color: $color-red
+        border-color: $color-red
+    button.button-city
+      height: 40px
+      width: 30px
+      color: #bdbdbd
+      border: none
+      outline: none
+      background-color: #ffffff
+      box-sizing: border-box
+      &:hover
+        cursor: pointer
+        color: $color-red
+    label
+      font-size: 14px
+      font-weight: 300
+      margin: 2px 0
+
+      color: #000000
+.address-coupon-total .address-coupon-total-column:first-child div:nth-child(2)
+  height: 45px
+  width: 355px
+  padding: 0
+  box-sizing: border-box
+div.address-coupon-total-column
+  background-color: #f5f3f3
+  min-width: 360px
+  height: 214px
+  justify-content: center
+  align-items: flex-end
+  padding-right: 40px
+  box-sizing: border-box
+  p
+    font-size: 11px
+    text-transform: uppercase
+    color: #4a4a4a
+    margin: 0
+    span
+      margin-left: 17px
+  h3
+    margin: 14px 0 40px 0
+    font-size: 16px
+    font-weight: 900
+    text-transform: uppercase
+    span
+      color: $color-red
+      margin-left: 17px
+  a
+    width: fit-content
+    text-decoration: none
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+    color: #ffffff
+    padding: 19px 42px
+    background-color: $color-red
+    border: none
+    outline: none
+    white-space: nowrap
+    &:hover
+      opacity: 0.7
+      cursor: pointer

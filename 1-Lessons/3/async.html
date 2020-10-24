@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let a = null; //1
+
+        // setTimeout(() => { //2 => в окружение
+        //     a = 100
+        // }, 2000); // через 2000 мс он вернется в колл-стек
+
+        // console.log(a); //3 null
+        // // <= вот сюда
+
+        // let a = null;
+
+        // function asyncImitation(cb) {
+        //     setTimeout(cb => {
+        //         a = 100;
+        //         cb(a);
+        //     }, 10000);
+        // }
+
+
+        // function doSmthWith_a(par) {
+        //     par *= 100500;
+        //     console.log(par);
+        // }
+
+        // asyncImitation(doSmthWith_a) // 100 * 100500
+        // doSmthWith_a(a) //0
+
+        // asyncImitation(() => {
+        //     par *= 100500;
+        //     console.log(par);
+        //     async2(() => {
+        //         //...
+        //         async3(() => {
+        //             //...
+        //         })
+        //     }, () => {
+        //         //...
+        //         async4()
+        //     })
+        // })
+
+        //callback hell
+
+        //Promises - Наш выбор!
+
+        let a = null;
+
+        //par - это индикатор успешности выполнения асинх операции
+        function async(par) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (par) {
+                        resolve(100);
+                    } else {
+                        reject('Some error from server');
+                    }
+                }, 5000);
+            })
+        }
+
+        function doFront(serverStatus) {
+            async(serverStatus)
+                .then(ifResolve => {
+                    a = ifResolve;
+                    return a * 100500;
+                })
+                .then(fromPrevThen => {
+                    console.log(fromPrevThen);
+                })
+                .catch(ifReject => {
+                    throw new Error(ifReject);
+                })
+                // .finally(() => {
+                //     console.log('Async end');
+                // })
+        }
+    </script>
+</body>
+</html>

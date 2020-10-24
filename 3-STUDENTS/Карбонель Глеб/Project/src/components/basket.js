@@ -1,10 +1,11 @@
-export default {
-    items: [],
-    wrapper: null,
-    container: null,
-    url: 'https://raw.githubusercontent.com/kellolo/static/master/JSON/basket.json',
+class Basket {
+    constructor(wrapper, container, url){
+        this.items = [];
+        this.wrapper = wrapper;
+        this.container = container;
+        this.url = url;
+    }
     init() {
-        console.log('BASKET');
         this.wrapper = document.querySelector('.drop-cart');
         this.container = document.querySelector('#basket');
 
@@ -16,11 +17,11 @@ export default {
                 this._render();
                 this._handleEvents();
             })
-    },
+    }
 
     _get(url) {
         return fetch(url).then(d => d.json()) //на выходе из этого метода вы получите полноценный объект(массив) с данными
-    },
+    }
     _handleEvents() {
         document.querySelector('#toggle-basket').addEventListener('click', () => {
             this.wrapper.classList.toggle('hidden');
@@ -32,7 +33,7 @@ export default {
                 this.remove(e.target.dataset.id)
             }
         })
-    },
+    }
     add(item) {
         // console.log('add ' + item.productName)
         let find = this.items.find(basketItem => basketItem.productId == item.productId);
@@ -43,7 +44,7 @@ export default {
             find.amount++;
         }
         this._render();
-    },
+    }
     remove(id) {
         let find = this.items.find(basketItem => basketItem.productId == id);
 
@@ -53,7 +54,7 @@ export default {
             this.items.splice(this.items.indexOf(find), 1);
         }
         this._render();
-    },
+    }
     _render() {
         let htmlStr = '';
         this.items.forEach((item) => {
@@ -84,3 +85,5 @@ export default {
         this.container.innerHTML = htmlStr;
     }
 }
+
+export default new Basket(null, null, 'https://raw.githubusercontent.com/kellolo/static/master/JSON/basket.json');

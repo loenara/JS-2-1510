@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GB1 Catalog</title>
+		<link rel="stylesheet" href="../src/layout/css/common.css">
+		<link rel="stylesheet" href="../src/layout/css/catalog.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top container">
+				<div class="header__left">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+
+					<div class="header__search">
+						<a href="#" class="header__browse">Browse<i
+							class="header__browseCaret fas fa-caret-down"></i></a>
+						<form class="header__searchForm">
+							<input type="search" class="header__searchBox"
+							placeholder="Search for item…"><button
+							class="header__searchBtn"><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<a href="#" class="header__cart" id="cartPopupButton"></a>
+					<div class="cartPopup hidden" id="cartPopup">
+						<ul class="cartPopup__items" id="cartPopupItems"></ul>
+						<div class="cartPopup__total">
+							<p class="cartPopup__totalLabel">Total</p>
+							<p class="cartPopup__totalValue" id="cartPopupTotal"></p>
+						</div>
+						<a href="checkout.html" class="cartPopup__checkout">Checkout</a>
+						<a href="cart.html" class="cartPopup__goToCart">Go to cart</a>
+					</div>
+					<a href="#" class="header__myAccount">My account<i
+						class="header__myAccountCaret fas fa-caret-down"></i></a>
+				</div>
+			</div>
+
+			<nav class="header__menu">
+				<a class="header__menuItem" href="#">Home</a>
+				<a class="header__menuItem" href="#">Men</a>
+				<a class="header__menuItem" href="#">Women</a>
+				<a class="header__menuItem" href="#">Kids</a>
+				<a class="header__menuItem" href="#">Accessories</a>
+				<a class="header__menuItem" href="#">Featured</a>
+				<a class="header__menuItem" href="#">Hot deals</a>
+			</nav>
+		</header>
+
+		<div class="breadcrumbs container">
+			<h2 class="breadcrumbs__title">New arrivals</h2>
+			<div class="breadcrumbs__links">
+				<a href="#" class="breadcrumbs__link">Home</a> /
+				<a href="#" class="breadcrumbs__link">Men</a> /
+				<a href="#" class="breadcrumbs__linkCurrent">New arrivals</a>
+			</div>
+		</div>
+
+		<div class="catalog container">
+			<div class="catalog__sections">
+				<div class="catalog__section catalog__sectionOpen">
+					<div class="catalog__sectionHeader"><h3>Category</h3>
+						<i class="fas fa-caret-up"></i></div>
+					<ul>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="#">Bags</a></li>
+						<li><a href="#">Denim</a></li>
+						<li><a href="#">Hoodies &amp; sweatshirts</a></li>
+						<li><a href="#">Jackets &amp; coats</a></li>
+						<li><a href="#">Pants</a></li>
+						<li><a href="#">Polos</a></li>
+						<li><a href="#">Shirts</a></li>
+						<li><a href="#">Shoes</a></li>
+						<li><a href="#">Shorts</a></li>
+						<li><a href="#">Sweaters &amp; knits</a></li>
+						<li><a href="#">T-shirts</a></li>
+						<li><a href="#">Tanks</a></li>
+					</ul>
+				</div>
+
+				<div class="catalog__section">
+					<div class="catalog__sectionHeader"><h3>Brand</h3>
+						<i class="fas fa-caret-down"></i></div>
+				</div>
+
+				<div class="catalog__section">
+					<div class="catalog__sectionHeader"><h3>Designer</h3>
+						<i class="fas fa-caret-down"></i></div>
+				</div>
+			</div>
+			<div class="catalog__content">
+				<div class="catalog__filters">
+					<div class="catalog__filter">
+						<h3>Trending now</h3>
+						<div class="catalog__filterTags">
+							<a href="#">Bohemian</a>
+							<a href="#">Floral</a>
+							<a href="#">Lace</a>
+							<a href="#">Floral</a>
+							<a href="#">Lace</a>
+							<a href="#">Bohemian</a>
+						</div>
+					</div>
+
+					<div class="catalog__filter">
+						<h3>Size</h3>
+						<div class="catalog__filterCheckboxes">
+							<label><input type="checkbox"> XXS</label>
+							<label><input type="checkbox"> XS</label>
+							<label><input type="checkbox"> S</label>
+							<label><input type="checkbox"> M</label>
+							<label><input type="checkbox"> L</label>
+							<label><input type="checkbox"> XL</label>
+							<label><input type="checkbox"> XXL</label>
+						</div>
+					</div>
+
+					<div class="catalog__filter">
+						<h3>Price</h3>
+						<input type="range" class="catalog__filterSlider">
+						<div class="catalog__filterSliderLabels">
+							<div>$52</div>
+							<div>$400</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="catalog__displayParams">
+					<label>Sort by <input type="text" value="Name"></label>
+					<label>Show <input type="text" value="09"></label>
+				</div>
+
+				<div class="catalog__items" id="catalogItems"></div>
+
+				<div class="paging">
+					<div class="paging__pageNums">
+						<span class="paging__arrowInactive"><i
+						class="fas fa-angle-left"></i></span><span
+						class="paging__curPage">1</span><a href="#"
+						class="paging__pageLink">2</a><a href="#"
+						class="paging__pageLink">3</a><a href="#"
+						class="paging__pageLink">4</a><a href="#"
+						class="paging__pageLink">5</a><span
+						class="paging__otherPages">6.....20</span><a href="#"
+						class="paging__arrow"><i class="fas fa-angle-right"></i></a>
+					</div>
+					<a href="#" class="paging__viewAll">View all</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="features container">
+			<div class="features__feature">
+				<h3>Free delivery</h3>
+				<p>Worldwide delivery on all. Authoritatively morph next-generation
+					innovation with extensive models.</p>
+			</div>
+			<div class="features__feature">
+				<h3>Sales &amp; discounts</h3>
+				<p>Worldwide delivery on all. Authoritatively morph next-generation
+					innovation with extensive models.</p>
+			</div>
+			<div class="features__feature">
+				<h3>Quality assurance</h3>
+				<p>Worldwide delivery on all. Authoritatively morph next-generation
+					innovation with extensive models.</p>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footerTop container">
+				<div class="footerTop__left">
+					<div class="footerTop__testimonial">
+						<img src="../src/assets/img/testimonial-photo.png" alt="Bin Burhan"
+							class="footerTop__testimonialPhoto">
+						<div class="footerTop__testimonialContent">
+							<p class="footerTop__testimonialText">“Vestibulum quis
+								porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+								condimentum a. Aliquam condimentum mattis neque sed
+								pretium”</p>
+							<p class="footerTop__testimonialName">Bin Burhan</p>
+							<p class="footerTop__testimonialLoc">Dhaka, BD</p>
+						</div>
+					</div>
+
+					<div class="footerTop__testimonialLinks">
+						<a href="#" class="footerTop__testimonialLink"></a>
+						<a href="#" class="footerTop__testimonialLink
+							footerTop__testimonialLinkCurrent"></a>
+						<a href="#" class="footerTop__testimonialLink"></a>
+					</div>
+				</div>
+
+				<div class="footerTop__right">
+					<div class="footerTop__subscribe">
+						<h3 class="footerTop__subscribeTitle">Subscribe</h3>
+						<p class="footerTop__subscribeSubtitle">for our newsletter and
+							promotion</p>
+
+						<form class="footerTop__subscribeForm">
+							<input type="email" class="footerTop__subscribeBox"
+								placeholder="Enter your email"><input type="submit"
+								class="footerTop__subscribeBtn" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="footerMid container">
+				<div class="footerMid__desc">
+					<a href="index.html" class="logo">
+						<img class="logo__img" src="../src/assets/img/logo.png" alt="Brand">
+						<h1 class="logo__title">Bran<span
+							class="logo__titleLast highlight">d</span></h1>
+					</a>
+					<p class="footerMid__text">Ob&shy;ject&shy;ively trans&shy;ition
+						ex&shy;tens&shy;ive data rather than cross func&shy;tion&shy;al
+						solu&shy;tions. Mono&shy;tonectally syn&shy;dic&shy;ate
+						mul&shy;tidiscip&shy;lin&shy;ary ma&shy;ter&shy;i&shy;als
+						be&shy;fore go for&shy;ward be&shy;ne&shy;fits.
+						In&shy;trins&shy;icly syn&shy;dic&shy;ate an ex&shy;pan&shy;ded
+						ar&shy;ray of pro&shy;cesses and cross-unit
+						part&shy;ner&shy;ships.</p>
+					<p class="footerMid__text">Ef&shy;fi&shy;ciently
+						pla&shy;gi&shy;ar&shy;ize 24/365 ac&shy;tion items and fo&shy;cused
+						in&shy;fomedi&shy;ar&shy;ies. Dis&shy;tinct&shy;ively seize
+						su&shy;per&shy;i&shy;or ini&shy;ti&shy;at&shy;ives for wire&shy;less
+						tech&shy;no&shy;lo&shy;gies. Dy&shy;nam&shy;ic&shy;ally
+						op&shy;tim&shy;ize.</p>
+				</div>
+
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Company</h3>
+					<a href="#" class="footerMid__link">Home</a>
+					<a href="#" class="footerMid__link">Shop</a>
+					<a href="#" class="footerMid__link">About</a>
+					<a href="#" class="footerMid__link">How it works</a>
+					<a href="#" class="footerMid__link">Contact</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Information</h3>
+					<a href="#" class="footerMid__link">Terms &amp; conditions</a>
+					<a href="#" class="footerMid__link">Privacy policy</a>
+					<a href="#" class="footerMid__link">How to buy</a>
+					<a href="#" class="footerMid__link">How to sell</a>
+					<a href="#" class="footerMid__link">Promotion</a>
+				</div>
+				<div class="footerMid__links">
+					<h3 class="footerMid__linksHeader">Shop category</h3>
+					<a href="#" class="footerMid__link">Men</a>
+					<a href="#" class="footerMid__link">Women</a>
+					<a href="#" class="footerMid__link">Children</a>
+					<a href="#" class="footerMid__link">Apparel</a>
+					<a href="#" class="footerMid__link">Browse all</a>
+				</div>
+			</div>
+
+			<div class="footerBottom container">
+				<p class="footerBottom__copyright">&copy;&nbsp;2017 Brand. All rights
+					reserved.</p>
+
+				<div class="footerBottom__social">
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-facebook-f"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-twitter"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-pinterest-p"></i></a>
+					<a href="#" class="footerBottom__socialLink"><i
+						class="fab fa-google-plus-g"></i></a>
+				</div>
+			</div>
+		</footer>
+		<!-- add missing scripts here -->
+	</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="stylesheet" href="../src/layout/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__left">
+            <a href="index.html" class="header__logo"><img src="../src/assets/img/logo.png" alt="logo"> Bran<span>d</span></a>
+            <form action="#" class="header__search" method="get">
+                <input type="checkbox" id="browse-checkbox">
+                <label for="browse-checkbox" class="browse">Browse <i class="fas fa-caret-down"></i></label>
+                <label for="browse-checkbox" class="browse-active">Browse <i class="fas fa-caret-up"></i></label>
+                <div class="drop-down">
+                    <div>Women</div>
+                    <a href="#">Dresses</a>
+                    <a href="#">Tops</a>
+                    <a href="#">Sweaters/Knits</a>
+                    <a href="#">Jackets/Coats</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Leggings/Pants</a>
+                    <a href="#">Skirts/Shorts</a>
+                    <a href="#">Accessories</a>
+                    <div>Men</div>
+                    <a href="#">Tees/Tank tops</a>
+                    <a href="#">Shirts/Polos</a>
+                    <a href="#">Sweaters</a>
+                    <a href="#">Sweatshirts/Hoodies</a>
+                    <a href="#">Blazers</a>
+                    <a href="#">Jackets/vests</a>
+                </div>
+                <input name="search" type="text" placeholder="Search for Item...">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="header__cart">
+                <img src="../src/assets/img/cart.png" alt="cart" id="toggle-cart">
+                <div class="qty" id="qty"></div>
+                <div class="cart-dropdown hidden">
+                    <div id="checked-items"></div>
+                    <div class="cart-dropdown__buttons">
+                        <a href="checkout.html">checkout</a>
+                        <a href="shopping-cart.html">go to cart</a>
+                    </div>
+                </div>
+            </div>
+            <a class="header__account-bar" href="#">My Account <i class="fas fa-caret-down"></i></a>
+        </div>
+    </header>
+    <div class="header__line"></div>
+    <nav class="topNav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Man</a>
+        <a href="single-page.html">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Accoseriese</a>
+        <a href="#">Featured</a>
+        <a href="#">Hot Deals</a>
+    </nav>
+    <div class="new-arrivals-main">
+        <div class="new-arrivals container">
+            <h2>New Arrivals</h2>
+            <div class="new-arrivals__breadcrumbs"><a href="index.html">Home</a> / <a href="#">Men</a> / <a href="#">New Arrivals</a></div>
+        </div>
+    </div>
+    <div class="man-main container">
+        <div class="man-sideBar">
+            <div>
+                <input type="checkbox" id="sideBar-checkbox-1" checked>
+                <label for="sideBar-checkbox-1">Category <i class="fas fa-caret-down"></i></label>
+                <label for="sideBar-checkbox-1">Category <i class="fas fa-caret-up"></i></label>
+                <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Hoodies &amp; Sweatshirts</a>
+                    <a href="#">Jackets &amp; Coats</a>
+                    <a href="#">Pants</a>
+                    <a href="#">Polos</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Sweaters &amp; Knits</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Tanks</a>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="sideBar-checkbox-2">
+                <label for="sideBar-checkbox-2">Brand <i class="fas fa-caret-down"></i></label>
+                <label for="sideBar-checkbox-2">Brand <i class="fas fa-caret-up"></i></label>
+                <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Hoodies &amp; Sweatshirts</a>
+                    <a href="#">Jackets &amp; Coats</a>
+                    <a href="#">Pants</a>
+                    <a href="#">Polos</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Sweaters &amp; Knits</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Tanks</a>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="sideBar-checkbox-3">
+                <label for="sideBar-checkbox-3">Designer <i class="fas fa-caret-down"></i></label>
+                <label for="sideBar-checkbox-3">Designer <i class="fas fa-caret-up"></i></label>
+                <div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">Hoodies &amp; Sweatshirts</a>
+                    <a href="#">Jackets &amp; Coats</a>
+                    <a href="#">Pants</a>
+                    <a href="#">Polos</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Shoes</a>
+                    <!-- <a href="#">Shorts</a>
+                    <a href="#">Sweaters &amp; Knits</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Tanks</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="man-goods">
+            <div class="man-goods__parameters">
+                <div>
+                    <h3>Trending now</h3>
+                    <div><a href="#">Bohemian</a> | <a href="#">Floral</a> | <a href="#">Lace</a><a href="#">Floral</a> | <a href="#">Lace</a> | <a href="#">Bohemian</a></div>
+                </div>
+                <div>
+                    <h3>Size</h3>
+                    <div>
+                        <label>
+                            <input type="checkbox">
+                            <span>XXS</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>L</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>XS</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>XL</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>S</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>XXL</span>
+                        </label>
+                        <label>
+                            <input type="checkbox">
+                            <span>M</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h3>Price</h3>
+                    <img src="../src/assets/img/filter-line.png" alt="filter-line">
+                    <div><span>$52</span><span>$400</span></div>
+                </div>
+            </div>
+            <div class="man-goods__sort">
+                <div>
+                    <div>Sort By</div>
+                    <div>Name <a href="#"><i class="fas fa-caret-down"></i></a></div>
+                </div>
+                <div>
+                    <div>Show</div>
+                    <div>09 <a href="#"><i class="fas fa-caret-down"></i></a></div>
+                </div>
+            </div>
+            <div id="items-man" class="man-goods__content">
+                <!-- этот блок заполняется с помощью js-логики -->
+            </div>
+            <div class="man-goods__buttons">
+                <div>
+                    <a href="#"><i class="fas fa-chevron-left"></i></a><a href="#"><span>1</span></a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6.....20</a><a href="#"><span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+                <a href="#">View All</a>
+            </div>
+        </div>
+    </div>
+    <div class="about-shop">
+        <div class="about-shop__inner container">
+            <div>
+                <img src="../src/assets/img/truck.svg" alt="truck">
+                <h3>Free Delivery</h3>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div>
+                <img src="../src/assets/img/percentage.svg" alt="percentage">
+                <h3>Sales &amp; discounts</h3>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+            <div>
+                <img src="../src/assets/img/crown.svg" alt="crown">
+                <h3>Quality assurance</h3>
+                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe-parent">
+        <div class="subscribe container">
+            <div class="subscribe-left">
+                <div class="subscribe-left__content">
+                    <div class="subscribe-left__content-photo"><img src="../src/assets/img/subscribe-woman-photo.jpg" alt="subscribe-woman-photo"></div>
+                    <div class="subscribe-left__text">
+                        <p class="subscribe-left__text-main">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <div class="subscribe-left__text-main-author1">Bin Burhan</div>
+                        <div class="subscribe-left__text-main-author2">Dhaka, Bd</div>
+                    </div>
+                    <div class="pagination-rectangle">
+                        <a href="#"></a><a href="#"></a><a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-right">
+                <div class="subscribe-right__header">
+                    <div class="subscribe-right__header-top">Subscribe</div>
+                    <div class="subscribe-right__header-bottom">for our newsletter and promotion</div>
+                </div>
+                <form action="#" class="subscribe-right__form" method="get">
+                    <input name="search" type="text" placeholder="Enter Your Email">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="various-info container">
+        <div class="brand__about">
+            <h2 class="header__logo"><img src="../src/assets/img/logo.png" alt="logo"> Bran<span>d</span></h2>
+            <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p><br>
+            <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+        <div class="brand__various-links">
+            <div class="brand__various-links__list">
+                <h2>company</h2>
+                <a href="index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="brand__various-links__list">
+                <h2>information</h2>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
+            </div>
+            <div class="brand__various-links__list">
+                <h2>shop category</h2>
+                <a href="product.html">Men</a>
+                <a href="single-page.html">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Browse All</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer container">
+            <div class="copyright">&copy; 2020  Brand  All Rights Reserved.</div>
+            <div class="socials"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-pinterest-p"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+        </div>
+    </div>
+    <script src="../dist/main.js"></script>
+    <!-- <script src="../src/components/cart.js"></script>
+    <script src="../src/components/catalog-man.js"></script> -->
+</body>
+</html>

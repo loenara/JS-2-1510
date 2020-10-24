@@ -1,0 +1,94 @@
+@import "variables"
+
+.catalogBar
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+  &__item
+    margin-top: 60px
+    height: 364px
+    width: 261px
+    position: relative
+
+    img
+      height: inherit
+      width: inherit
+      object-fit: cover
+      object-position: center top
+
+
+    &:hover
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+
+    &:hover .catalogBar__item-hover
+      opacity: 0.8
+
+
+    &:hover .catalogBar__item-hover-contente
+      opacity: 0.8
+
+    &-description
+      color: $secondColour
+      font-size: 13px
+      font-weight: $textMain
+      text-transform: uppercase
+      margin-top: 20px
+      margin-left: 13px
+
+    &-price
+      color: $mainColour
+      font-size: 16px
+      font-weight: $textBold
+      text-transform: uppercase
+      margin-top: 17px
+      margin-left: 13px
+
+    &-hover
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 0
+      width: 263px
+      height: 281px
+      background-color: #3a3838
+
+      &-contente
+        position: absolute
+        opacity: 0
+        width: 123px
+        height: 39px
+        top: 0
+        left: 0
+        border: 1px solid #ffffff
+        background-color: #3a3838
+        margin-left: 70px
+        margin-top: 98px
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        a
+            text-decoration: none
+            color: #ffffff
+            font-size: 13px
+            font-weight: $textBold
+
+
+      span
+          margin-left: 5px
+
+  &__browseProducts
+    margin-top: 79px
+    width: 212px
+    height: 30px
+    background-color: $mainColour
+    color: #ffffff
+    font-size: 16px
+    font-weight: $textBold
+    letter-spacing: 0.4px
+    text-align: center
+    padding-top: 15px
+    text-decoration: none
